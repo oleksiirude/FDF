@@ -6,10 +6,20 @@ CMakeFiles/FDF.dir/auxiliary.c.o: .././libft/inc/libft.h
 CMakeFiles/FDF.dir/auxiliary.c.o: ../auxiliary.c
 CMakeFiles/FDF.dir/auxiliary.c.o: ../fdf.h
 
+CMakeFiles/FDF.dir/create_matrix.c.o: .././libft/inc/ft_printf.h
+CMakeFiles/FDF.dir/create_matrix.c.o: .././libft/inc/libft.h
+CMakeFiles/FDF.dir/create_matrix.c.o: ../create_matrix.c
+CMakeFiles/FDF.dir/create_matrix.c.o: ../fdf.h
+
 CMakeFiles/FDF.dir/error_handling.c.o: .././libft/inc/ft_printf.h
 CMakeFiles/FDF.dir/error_handling.c.o: .././libft/inc/libft.h
 CMakeFiles/FDF.dir/error_handling.c.o: ../error_handling.c
 CMakeFiles/FDF.dir/error_handling.c.o: ../fdf.h
+
+CMakeFiles/FDF.dir/free.c.o: .././libft/inc/ft_printf.h
+CMakeFiles/FDF.dir/free.c.o: .././libft/inc/libft.h
+CMakeFiles/FDF.dir/free.c.o: ../fdf.h
+CMakeFiles/FDF.dir/free.c.o: ../free.c
 
 CMakeFiles/FDF.dir/libft/srcs/ft_atoi.c.o: ../libft/inc/ft_printf.h
 CMakeFiles/FDF.dir/libft/srcs/ft_atoi.c.o: ../libft/inc/libft.h

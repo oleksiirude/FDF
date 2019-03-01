@@ -150,6 +150,33 @@ auxiliary.c.s:
 	$(MAKE) -f CMakeFiles/FDF.dir/build.make CMakeFiles/FDF.dir/auxiliary.c.s
 .PHONY : auxiliary.c.s
 
+create_matrix.o: create_matrix.c.o
+
+.PHONY : create_matrix.o
+
+# target to build an object file
+create_matrix.c.o:
+	$(MAKE) -f CMakeFiles/FDF.dir/build.make CMakeFiles/FDF.dir/create_matrix.c.o
+.PHONY : create_matrix.c.o
+
+create_matrix.i: create_matrix.c.i
+
+.PHONY : create_matrix.i
+
+# target to preprocess a source file
+create_matrix.c.i:
+	$(MAKE) -f CMakeFiles/FDF.dir/build.make CMakeFiles/FDF.dir/create_matrix.c.i
+.PHONY : create_matrix.c.i
+
+create_matrix.s: create_matrix.c.s
+
+.PHONY : create_matrix.s
+
+# target to generate assembly for a file
+create_matrix.c.s:
+	$(MAKE) -f CMakeFiles/FDF.dir/build.make CMakeFiles/FDF.dir/create_matrix.c.s
+.PHONY : create_matrix.c.s
+
 error_handling.o: error_handling.c.o
 
 .PHONY : error_handling.o
@@ -176,6 +203,33 @@ error_handling.s: error_handling.c.s
 error_handling.c.s:
 	$(MAKE) -f CMakeFiles/FDF.dir/build.make CMakeFiles/FDF.dir/error_handling.c.s
 .PHONY : error_handling.c.s
+
+free.o: free.c.o
+
+.PHONY : free.o
+
+# target to build an object file
+free.c.o:
+	$(MAKE) -f CMakeFiles/FDF.dir/build.make CMakeFiles/FDF.dir/free.c.o
+.PHONY : free.c.o
+
+free.i: free.c.i
+
+.PHONY : free.i
+
+# target to preprocess a source file
+free.c.i:
+	$(MAKE) -f CMakeFiles/FDF.dir/build.make CMakeFiles/FDF.dir/free.c.i
+.PHONY : free.c.i
+
+free.s: free.c.s
+
+.PHONY : free.s
+
+# target to generate assembly for a file
+free.c.s:
+	$(MAKE) -f CMakeFiles/FDF.dir/build.make CMakeFiles/FDF.dir/free.c.s
+.PHONY : free.c.s
 
 libft/srcs/ft_atoi.o: libft/srcs/ft_atoi.c.o
 
@@ -3051,9 +3105,15 @@ help:
 	@echo "... auxiliary.o"
 	@echo "... auxiliary.i"
 	@echo "... auxiliary.s"
+	@echo "... create_matrix.o"
+	@echo "... create_matrix.i"
+	@echo "... create_matrix.s"
 	@echo "... error_handling.o"
 	@echo "... error_handling.i"
 	@echo "... error_handling.s"
+	@echo "... free.o"
+	@echo "... free.i"
+	@echo "... free.s"
 	@echo "... libft/srcs/ft_atoi.o"
 	@echo "... libft/srcs/ft_atoi.i"
 	@echo "... libft/srcs/ft_atoi.s"

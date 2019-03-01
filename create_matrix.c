@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   auxiliary.c                                        :+:      :+:    :+:   */
+/*   create_matrix.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: olrudenk <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -12,29 +12,33 @@
 
 #include "fdf.h"
 
-int		atoi_ptr(char **str)
+int *create_row(char *line, int x)
 {
-	int	res;
-	int minus;
+	int i;
+	int *row;
 
-	res = 0;
-	minus = 1;
-	while (**str == ' ')
-		(*str)++;
-	if (**str == '-' || **str == '+')
+	i = 0;
+	row = (int*)malloc(sizeof(int) * x);
+	while (*line)
 	{
-		if (**str == '-')
-			minus = -1;
-		(*str)++;
+		row[i++] = atoi_ptr(&line);
+		if (*line == ',')
+			skip_hex(&line);
 	}
-	while (**str)
+	return (row);
+}
+
+void create_matrix(t_input **map, t_line *head, t_line *tail)
+{
+	int i;
+
+	i = 0;
+	(*map)->size.y = tail->size.y;
+	(*map)->size.x = tail->size.x;
+	(*map)->map = (int**)malloc(sizeof(int*) * (*map)->size.y);
+	while (i < (*map)->size.y)
 	{
-		while (**str >= '0' && **str <= '9')
-		{
-			res = 10 * res + (**str - '0');
-			(*str)++;
-		}
-		return (res * minus);
+		(*map)->map[i++] = create_row(head->line, (*map)->size.x);
+		head = head->next;
 	}
-	return (0);
 }

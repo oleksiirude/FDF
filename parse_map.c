@@ -33,6 +33,8 @@ int	parse_line(char *line, int *x)
 	counter = 0;
 	while (*line)
 	{
+//		while (*line == ' ')
+//			line++;
 		if (*line == '-' || *line == '+')
 			line++;
 		if (!ft_isdigit(*line))
@@ -55,7 +57,7 @@ int	parse_line(char *line, int *x)
 }
 
 
-int parse_map(t_line **lst, int fd, char *title)
+int parse_map(t_line **lst, int fd)
 {
 	int		x;
 	int		counter;
@@ -67,14 +69,17 @@ int parse_map(t_line **lst, int fd, char *title)
 	{
 		if (parse_line(line, &x))
 		{
-			(*lst)->row = line;
-			(*lst)->y = counter++;
+			(*lst)->line = line;
 			(*lst)->next = (t_line*)malloc(sizeof(t_line));
 			*lst = (*lst)->next;
 			(*lst)->next = NULL;
+			counter++;
 		}
 		else
 			return (free_line(&line));
 	}
+	(*lst)->size.y = counter;
+	(*lst)->size.x = x;
+	free(line);
 	return (1);
 }

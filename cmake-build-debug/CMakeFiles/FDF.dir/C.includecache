@@ -29,6 +29,8 @@ ft_printf.h
 /Users/olrudenk/CLionProjects/FDF/./libft/inc/ft_printf.h
 
 /Users/olrudenk/CLionProjects/FDF/fdf.h
+stdio.h
+-
 math.h
 -
 fcntl.h

@@ -107,6 +107,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/FDF.dir/auxiliary.c.o"
   "CMakeFiles/FDF.dir/parse_map.c.o"
   "CMakeFiles/FDF.dir/error_handling.c.o"
+  "CMakeFiles/FDF.dir/free.c.o"
+  "CMakeFiles/FDF.dir/create_matrix.c.o"
   "FDF.pdb"
   "FDF"
 )

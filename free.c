@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   error_handling.c                                   :+:      :+:    :+:   */
+/*   free.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: olrudenk <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -12,26 +12,13 @@
 
 #include "fdf.h"
 
-int		error_manage(int dir, char *title, int ac, int error)
+int 	free_line(char **line)
 {
-	if (ac < 2)
-		ft_cprintf("REDCLToo less arguments!\n"
-				   "GRNCLGive me just one valid map, please."
-	   "\nGRNCLForce exit.STPC\n");
-	else if (ac > 2)
-		ft_cprintf("REDCLToo many arguments!\n"
-				   "GRNCLGive me just one valid map, please."
-	   "\nGRNCLForce exit.STPC\n");
-	else if (dir > 0)
-		ft_cprintf("<REDCL%sSTPC> YELCLis a derictory!STPCGRNCL "
-				   "\nForce exit.\n", title);
-	else if (error < 0)
-		ft_cprintf("REDCLError has found into the map.\n"
-			 "GRNCLCheck your map and try again!\nForce exit.STPC\n");
-	return (-1);
+	free(*line);
+	return (0);
 }
 
-int	free_and_error_handling(t_line **head)
+int	free_lst(t_line **head)
 {
 	t_line *tmp;
 
@@ -42,6 +29,5 @@ int	free_and_error_handling(t_line **head)
 		free(tmp->line);
 		free(tmp);
 	}
-	ft_cprintf("REDCLError. GRNCLAborting...STPC\n");
-	return (-1);
+	return (0);
 }

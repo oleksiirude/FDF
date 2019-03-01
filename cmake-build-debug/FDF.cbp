@@ -83,10 +83,16 @@
 		<Unit filename="/Users/olrudenk/CLionProjects/FDF/auxiliary.c">
 			<Option target="FDF"/>
 		</Unit>
+		<Unit filename="/Users/olrudenk/CLionProjects/FDF/create_matrix.c">
+			<Option target="FDF"/>
+		</Unit>
 		<Unit filename="/Users/olrudenk/CLionProjects/FDF/error_handling.c">
 			<Option target="FDF"/>
 		</Unit>
 		<Unit filename="/Users/olrudenk/CLionProjects/FDF/fdf.h">
+			<Option target="FDF"/>
+		</Unit>
+		<Unit filename="/Users/olrudenk/CLionProjects/FDF/free.c">
 			<Option target="FDF"/>
 		</Unit>
 		<Unit filename="/Users/olrudenk/CLionProjects/FDF/libft/srcs/ft_atoi.c">

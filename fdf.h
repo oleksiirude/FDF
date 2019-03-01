@@ -13,6 +13,7 @@
 #ifndef FDF_H
 # define FDF_H
 
+# include <stdio.h>
 # include <math.h>
 # include <fcntl.h>
 # include "./libft/inc/libft.h"
@@ -31,8 +32,8 @@ typedef struct		s_crd
 
 typedef struct		s_line
 {
-	int 			y;
-	char 			*row;
+	struct s_crd	size;
+	char 			*line;
 	struct	s_line	*next;
 }					t_line;
 
@@ -44,8 +45,10 @@ typedef struct		s_input
 
 int					atoi_ptr(char **str);
 int					free_line(char **line);
+int					free_lst(t_line **head);
+int					skip_hex(char **line);
+int					parse_map(t_line **lst, int fd);
 int					free_and_error_handling(t_line	**head);
 int					error_manage(int dir, char *title, int ac, int error);
-int					parse_map(t_line **lst, int fd, char *title);
-int 				**convert_to_intarr(t_input *map);
+void 				create_matrix(t_input **map, t_line *head, t_line *tail);
 #endif

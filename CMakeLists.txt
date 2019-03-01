@@ -110,4 +110,4 @@ add_executable(FDF ${LIB} main.c fdf.h
         libft/srcs/ft_printf/ft_type_x_auxiliary.c
         libft/srcs/ft_printf/ft_type_r.c
         libft/srcs/ft_printf/ft_type_r_auxiliary.c
-        libft/srcs/ft_printf/ft_valid_case.c auxiliary.c parse_map.c error_handling.c)
+        libft/srcs/ft_printf/ft_valid_case.c auxiliary.c parse_map.c error_handling.c free.c create_matrix.c)
