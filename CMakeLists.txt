@@ -3,6 +3,8 @@ project(FDF C)
 
 set(CMAKE_C_STANDARD 99)
 #add_definitions( "-Wall -Wextra -Werror" )
+#add_definitions( "-lmlx -framework OpenGL -framework AppKit" )
+#SET(GCC_COVERAGE_COMPILE_FLAGS "-Wall -Wextra -Werror -lmlx -framework OpenGL -framework AppKit")
 AUX_SOURCE_DIRECTORY(libft LIB)
 add_executable(FDF ${LIB} main.c fdf.h
         libft/srcs/ft_atoi.c
@@ -108,5 +110,4 @@ add_executable(FDF ${LIB} main.c fdf.h
         libft/srcs/ft_printf/ft_type_x_auxiliary.c
         libft/srcs/ft_printf/ft_type_r.c
         libft/srcs/ft_printf/ft_type_r_auxiliary.c
-        libft/srcs/ft_printf/ft_valid_case.c)
-link_libraries(libft/libft.a)
+        libft/srcs/ft_printf/ft_valid_case.c auxiliary.c parse_map.c error_handling.c)

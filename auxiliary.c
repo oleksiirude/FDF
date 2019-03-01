@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   fdf.h                                              :+:      :+:    :+:   */
+/*   auxiliary.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: olrudenk <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -10,42 +10,42 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef FDF_H
-# define FDF_H
+#include "fdf.h"
 
-# include <math.h>
-# include <fcntl.h>
-# include "./libft/inc/libft.h"
-
-typedef struct		s_sys
+int 	free_line(char **line)
 {
-	int				fd;
-	int				dir;
-}					t_sys;
+	free(*line);
+	return (0);
+}
 
-typedef struct		s_crd
+int		atoi_ptr(char **str)
 {
-	int				y;
-	int				x;
-}					t_crd;
+	int	res;
+	int minus;
 
-typedef struct		s_line
+	res = 0;
+	minus = 1;
+	while (**str == ' ')
+		(*str)++;
+	if (**str == '-' || **str == '+')
+	{
+		if (**str == '-')
+			minus = -1;
+		(*str)++;
+	}
+	while (**str)
+	{
+		while (**str >= '0' && **str <= '9')
+		{
+			res = 10 * res + (**str - '0');
+			(*str)++;
+		}
+		return (res * minus);
+	}
+	return (0);
+}
+
+int **convert_to_intarr(t_input *map)
 {
-	int 			y;
-	char 			*row;
-	struct	s_line	*next;
-}					t_line;
 
-typedef struct		s_input
-{
-	struct s_crd	size;
-	int 			**map;
-}					t_input;
-
-int					atoi_ptr(char **str);
-int					free_line(char **line);
-int					free_and_error_handling(t_line	**head);
-int					error_manage(int dir, char *title, int ac, int error);
-int					parse_map(t_line **lst, int fd, char *title);
-int 				**convert_to_intarr(t_input *map);
-#endif
+}

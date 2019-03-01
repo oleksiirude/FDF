@@ -123,6 +123,60 @@ FDF/fast:
 	$(MAKE) -f CMakeFiles/FDF.dir/build.make CMakeFiles/FDF.dir/build
 .PHONY : FDF/fast
 
+auxiliary.o: auxiliary.c.o
+
+.PHONY : auxiliary.o
+
+# target to build an object file
+auxiliary.c.o:
+	$(MAKE) -f CMakeFiles/FDF.dir/build.make CMakeFiles/FDF.dir/auxiliary.c.o
+.PHONY : auxiliary.c.o
+
+auxiliary.i: auxiliary.c.i
+
+.PHONY : auxiliary.i
+
+# target to preprocess a source file
+auxiliary.c.i:
+	$(MAKE) -f CMakeFiles/FDF.dir/build.make CMakeFiles/FDF.dir/auxiliary.c.i
+.PHONY : auxiliary.c.i
+
+auxiliary.s: auxiliary.c.s
+
+.PHONY : auxiliary.s
+
+# target to generate assembly for a file
+auxiliary.c.s:
+	$(MAKE) -f CMakeFiles/FDF.dir/build.make CMakeFiles/FDF.dir/auxiliary.c.s
+.PHONY : auxiliary.c.s
+
+error_handling.o: error_handling.c.o
+
+.PHONY : error_handling.o
+
+# target to build an object file
+error_handling.c.o:
+	$(MAKE) -f CMakeFiles/FDF.dir/build.make CMakeFiles/FDF.dir/error_handling.c.o
+.PHONY : error_handling.c.o
+
+error_handling.i: error_handling.c.i
+
+.PHONY : error_handling.i
+
+# target to preprocess a source file
+error_handling.c.i:
+	$(MAKE) -f CMakeFiles/FDF.dir/build.make CMakeFiles/FDF.dir/error_handling.c.i
+.PHONY : error_handling.c.i
+
+error_handling.s: error_handling.c.s
+
+.PHONY : error_handling.s
+
+# target to generate assembly for a file
+error_handling.c.s:
+	$(MAKE) -f CMakeFiles/FDF.dir/build.make CMakeFiles/FDF.dir/error_handling.c.s
+.PHONY : error_handling.c.s
+
 libft/srcs/ft_atoi.o: libft/srcs/ft_atoi.c.o
 
 .PHONY : libft/srcs/ft_atoi.o
@@ -2958,6 +3012,33 @@ main.c.s:
 	$(MAKE) -f CMakeFiles/FDF.dir/build.make CMakeFiles/FDF.dir/main.c.s
 .PHONY : main.c.s
 
+parse_map.o: parse_map.c.o
+
+.PHONY : parse_map.o
+
+# target to build an object file
+parse_map.c.o:
+	$(MAKE) -f CMakeFiles/FDF.dir/build.make CMakeFiles/FDF.dir/parse_map.c.o
+.PHONY : parse_map.c.o
+
+parse_map.i: parse_map.c.i
+
+.PHONY : parse_map.i
+
+# target to preprocess a source file
+parse_map.c.i:
+	$(MAKE) -f CMakeFiles/FDF.dir/build.make CMakeFiles/FDF.dir/parse_map.c.i
+.PHONY : parse_map.c.i
+
+parse_map.s: parse_map.c.s
+
+.PHONY : parse_map.s
+
+# target to generate assembly for a file
+parse_map.c.s:
+	$(MAKE) -f CMakeFiles/FDF.dir/build.make CMakeFiles/FDF.dir/parse_map.c.s
+.PHONY : parse_map.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -2967,6 +3048,12 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... FDF"
+	@echo "... auxiliary.o"
+	@echo "... auxiliary.i"
+	@echo "... auxiliary.s"
+	@echo "... error_handling.o"
+	@echo "... error_handling.i"
+	@echo "... error_handling.s"
 	@echo "... libft/srcs/ft_atoi.o"
 	@echo "... libft/srcs/ft_atoi.i"
 	@echo "... libft/srcs/ft_atoi.s"
@@ -3282,6 +3369,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... parse_map.o"
+	@echo "... parse_map.i"
+	@echo "... parse_map.s"
 .PHONY : help
 
 

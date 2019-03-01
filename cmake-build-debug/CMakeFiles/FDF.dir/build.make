@@ -1422,6 +1422,45 @@ CMakeFiles/FDF.dir/libft/srcs/ft_printf/ft_valid_case.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/FDF.dir/libft/srcs/ft_printf/ft_valid_case.c.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/olrudenk/CLionProjects/FDF/libft/srcs/ft_printf/ft_valid_case.c -o CMakeFiles/FDF.dir/libft/srcs/ft_printf/ft_valid_case.c.s
 
+CMakeFiles/FDF.dir/auxiliary.c.o: CMakeFiles/FDF.dir/flags.make
+CMakeFiles/FDF.dir/auxiliary.c.o: ../auxiliary.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/olrudenk/CLionProjects/FDF/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_106) "Building C object CMakeFiles/FDF.dir/auxiliary.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/FDF.dir/auxiliary.c.o   -c /Users/olrudenk/CLionProjects/FDF/auxiliary.c
+
+CMakeFiles/FDF.dir/auxiliary.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/FDF.dir/auxiliary.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/olrudenk/CLionProjects/FDF/auxiliary.c > CMakeFiles/FDF.dir/auxiliary.c.i
+
+CMakeFiles/FDF.dir/auxiliary.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/FDF.dir/auxiliary.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/olrudenk/CLionProjects/FDF/auxiliary.c -o CMakeFiles/FDF.dir/auxiliary.c.s
+
+CMakeFiles/FDF.dir/parse_map.c.o: CMakeFiles/FDF.dir/flags.make
+CMakeFiles/FDF.dir/parse_map.c.o: ../parse_map.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/olrudenk/CLionProjects/FDF/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_107) "Building C object CMakeFiles/FDF.dir/parse_map.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/FDF.dir/parse_map.c.o   -c /Users/olrudenk/CLionProjects/FDF/parse_map.c
+
+CMakeFiles/FDF.dir/parse_map.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/FDF.dir/parse_map.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/olrudenk/CLionProjects/FDF/parse_map.c > CMakeFiles/FDF.dir/parse_map.c.i
+
+CMakeFiles/FDF.dir/parse_map.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/FDF.dir/parse_map.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/olrudenk/CLionProjects/FDF/parse_map.c -o CMakeFiles/FDF.dir/parse_map.c.s
+
+CMakeFiles/FDF.dir/error_handling.c.o: CMakeFiles/FDF.dir/flags.make
+CMakeFiles/FDF.dir/error_handling.c.o: ../error_handling.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/olrudenk/CLionProjects/FDF/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_108) "Building C object CMakeFiles/FDF.dir/error_handling.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/FDF.dir/error_handling.c.o   -c /Users/olrudenk/CLionProjects/FDF/error_handling.c
+
+CMakeFiles/FDF.dir/error_handling.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/FDF.dir/error_handling.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/olrudenk/CLionProjects/FDF/error_handling.c > CMakeFiles/FDF.dir/error_handling.c.i
+
+CMakeFiles/FDF.dir/error_handling.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/FDF.dir/error_handling.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/olrudenk/CLionProjects/FDF/error_handling.c -o CMakeFiles/FDF.dir/error_handling.c.s
+
 # Object files for target FDF
 FDF_OBJECTS = \
 "CMakeFiles/FDF.dir/main.c.o" \
@@ -1528,7 +1567,10 @@ FDF_OBJECTS = \
 "CMakeFiles/FDF.dir/libft/srcs/ft_printf/ft_type_x_auxiliary.c.o" \
 "CMakeFiles/FDF.dir/libft/srcs/ft_printf/ft_type_r.c.o" \
 "CMakeFiles/FDF.dir/libft/srcs/ft_printf/ft_type_r_auxiliary.c.o" \
-"CMakeFiles/FDF.dir/libft/srcs/ft_printf/ft_valid_case.c.o"
+"CMakeFiles/FDF.dir/libft/srcs/ft_printf/ft_valid_case.c.o" \
+"CMakeFiles/FDF.dir/auxiliary.c.o" \
+"CMakeFiles/FDF.dir/parse_map.c.o" \
+"CMakeFiles/FDF.dir/error_handling.c.o"
 
 # External object files for target FDF
 FDF_EXTERNAL_OBJECTS =
@@ -1638,9 +1680,12 @@ FDF: CMakeFiles/FDF.dir/libft/srcs/ft_printf/ft_type_x_auxiliary.c.o
 FDF: CMakeFiles/FDF.dir/libft/srcs/ft_printf/ft_type_r.c.o
 FDF: CMakeFiles/FDF.dir/libft/srcs/ft_printf/ft_type_r_auxiliary.c.o
 FDF: CMakeFiles/FDF.dir/libft/srcs/ft_printf/ft_valid_case.c.o
+FDF: CMakeFiles/FDF.dir/auxiliary.c.o
+FDF: CMakeFiles/FDF.dir/parse_map.c.o
+FDF: CMakeFiles/FDF.dir/error_handling.c.o
 FDF: CMakeFiles/FDF.dir/build.make
 FDF: CMakeFiles/FDF.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/olrudenk/CLionProjects/FDF/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_106) "Linking C executable FDF"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/olrudenk/CLionProjects/FDF/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_109) "Linking C executable FDF"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/FDF.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

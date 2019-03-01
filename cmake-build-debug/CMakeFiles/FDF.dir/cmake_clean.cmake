@@ -104,6 +104,9 @@ file(REMOVE_RECURSE
   "CMakeFiles/FDF.dir/libft/srcs/ft_printf/ft_type_r.c.o"
   "CMakeFiles/FDF.dir/libft/srcs/ft_printf/ft_type_r_auxiliary.c.o"
   "CMakeFiles/FDF.dir/libft/srcs/ft_printf/ft_valid_case.c.o"
+  "CMakeFiles/FDF.dir/auxiliary.c.o"
+  "CMakeFiles/FDF.dir/parse_map.c.o"
+  "CMakeFiles/FDF.dir/error_handling.c.o"
   "FDF.pdb"
   "FDF"
 )
