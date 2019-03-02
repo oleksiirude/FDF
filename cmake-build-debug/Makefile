@@ -150,6 +150,33 @@ auxiliary.c.s:
 	$(MAKE) -f CMakeFiles/FDF.dir/build.make CMakeFiles/FDF.dir/auxiliary.c.s
 .PHONY : auxiliary.c.s
 
+bresenhams_algorithm.o: bresenhams_algorithm.c.o
+
+.PHONY : bresenhams_algorithm.o
+
+# target to build an object file
+bresenhams_algorithm.c.o:
+	$(MAKE) -f CMakeFiles/FDF.dir/build.make CMakeFiles/FDF.dir/bresenhams_algorithm.c.o
+.PHONY : bresenhams_algorithm.c.o
+
+bresenhams_algorithm.i: bresenhams_algorithm.c.i
+
+.PHONY : bresenhams_algorithm.i
+
+# target to preprocess a source file
+bresenhams_algorithm.c.i:
+	$(MAKE) -f CMakeFiles/FDF.dir/build.make CMakeFiles/FDF.dir/bresenhams_algorithm.c.i
+.PHONY : bresenhams_algorithm.c.i
+
+bresenhams_algorithm.s: bresenhams_algorithm.c.s
+
+.PHONY : bresenhams_algorithm.s
+
+# target to generate assembly for a file
+bresenhams_algorithm.c.s:
+	$(MAKE) -f CMakeFiles/FDF.dir/build.make CMakeFiles/FDF.dir/bresenhams_algorithm.c.s
+.PHONY : bresenhams_algorithm.c.s
+
 create_matrix.o: create_matrix.c.o
 
 .PHONY : create_matrix.o
@@ -203,6 +230,33 @@ error_handling.s: error_handling.c.s
 error_handling.c.s:
 	$(MAKE) -f CMakeFiles/FDF.dir/build.make CMakeFiles/FDF.dir/error_handling.c.s
 .PHONY : error_handling.c.s
+
+fdf.o: fdf.c.o
+
+.PHONY : fdf.o
+
+# target to build an object file
+fdf.c.o:
+	$(MAKE) -f CMakeFiles/FDF.dir/build.make CMakeFiles/FDF.dir/fdf.c.o
+.PHONY : fdf.c.o
+
+fdf.i: fdf.c.i
+
+.PHONY : fdf.i
+
+# target to preprocess a source file
+fdf.c.i:
+	$(MAKE) -f CMakeFiles/FDF.dir/build.make CMakeFiles/FDF.dir/fdf.c.i
+.PHONY : fdf.c.i
+
+fdf.s: fdf.c.s
+
+.PHONY : fdf.s
+
+# target to generate assembly for a file
+fdf.c.s:
+	$(MAKE) -f CMakeFiles/FDF.dir/build.make CMakeFiles/FDF.dir/fdf.c.s
+.PHONY : fdf.c.s
 
 free.o: free.c.o
 
@@ -3105,12 +3159,18 @@ help:
 	@echo "... auxiliary.o"
 	@echo "... auxiliary.i"
 	@echo "... auxiliary.s"
+	@echo "... bresenhams_algorithm.o"
+	@echo "... bresenhams_algorithm.i"
+	@echo "... bresenhams_algorithm.s"
 	@echo "... create_matrix.o"
 	@echo "... create_matrix.i"
 	@echo "... create_matrix.s"
 	@echo "... error_handling.o"
 	@echo "... error_handling.i"
 	@echo "... error_handling.s"
+	@echo "... fdf.o"
+	@echo "... fdf.i"
+	@echo "... fdf.s"
 	@echo "... free.o"
 	@echo "... free.i"
 	@echo "... free.s"

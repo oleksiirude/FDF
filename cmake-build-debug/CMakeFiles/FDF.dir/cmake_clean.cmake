@@ -109,6 +109,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/FDF.dir/error_handling.c.o"
   "CMakeFiles/FDF.dir/free.c.o"
   "CMakeFiles/FDF.dir/create_matrix.c.o"
+  "CMakeFiles/FDF.dir/fdf.c.o"
+  "CMakeFiles/FDF.dir/bresenhams_algorithm.c.o"
   "FDF.pdb"
   "FDF"
 )

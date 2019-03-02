@@ -6,6 +6,11 @@ CMakeFiles/FDF.dir/auxiliary.c.o: .././libft/inc/libft.h
 CMakeFiles/FDF.dir/auxiliary.c.o: ../auxiliary.c
 CMakeFiles/FDF.dir/auxiliary.c.o: ../fdf.h
 
+CMakeFiles/FDF.dir/bresenhams_algorithm.c.o: .././libft/inc/ft_printf.h
+CMakeFiles/FDF.dir/bresenhams_algorithm.c.o: .././libft/inc/libft.h
+CMakeFiles/FDF.dir/bresenhams_algorithm.c.o: ../bresenhams_algorithm.c
+CMakeFiles/FDF.dir/bresenhams_algorithm.c.o: ../fdf.h
+
 CMakeFiles/FDF.dir/create_matrix.c.o: .././libft/inc/ft_printf.h
 CMakeFiles/FDF.dir/create_matrix.c.o: .././libft/inc/libft.h
 CMakeFiles/FDF.dir/create_matrix.c.o: ../create_matrix.c
@@ -15,6 +20,11 @@ CMakeFiles/FDF.dir/error_handling.c.o: .././libft/inc/ft_printf.h
 CMakeFiles/FDF.dir/error_handling.c.o: .././libft/inc/libft.h
 CMakeFiles/FDF.dir/error_handling.c.o: ../error_handling.c
 CMakeFiles/FDF.dir/error_handling.c.o: ../fdf.h
+
+CMakeFiles/FDF.dir/fdf.c.o: .././libft/inc/ft_printf.h
+CMakeFiles/FDF.dir/fdf.c.o: .././libft/inc/libft.h
+CMakeFiles/FDF.dir/fdf.c.o: ../fdf.c
+CMakeFiles/FDF.dir/fdf.c.o: ../fdf.h
 
 CMakeFiles/FDF.dir/free.c.o: .././libft/inc/ft_printf.h
 CMakeFiles/FDF.dir/free.c.o: .././libft/inc/libft.h

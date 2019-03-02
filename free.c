@@ -12,6 +12,12 @@
 
 #include "fdf.h"
 
+void	shut_down(int *fd, int *dir)
+{
+	close(*fd);
+	close(*dir);
+}
+
 int		free_line(char **line)
 {
 	free(*line);

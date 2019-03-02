@@ -5,8 +5,10 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
   "/Users/olrudenk/CLionProjects/FDF/auxiliary.c" "/Users/olrudenk/CLionProjects/FDF/cmake-build-debug/CMakeFiles/FDF.dir/auxiliary.c.o"
+  "/Users/olrudenk/CLionProjects/FDF/bresenhams_algorithm.c" "/Users/olrudenk/CLionProjects/FDF/cmake-build-debug/CMakeFiles/FDF.dir/bresenhams_algorithm.c.o"
   "/Users/olrudenk/CLionProjects/FDF/create_matrix.c" "/Users/olrudenk/CLionProjects/FDF/cmake-build-debug/CMakeFiles/FDF.dir/create_matrix.c.o"
   "/Users/olrudenk/CLionProjects/FDF/error_handling.c" "/Users/olrudenk/CLionProjects/FDF/cmake-build-debug/CMakeFiles/FDF.dir/error_handling.c.o"
+  "/Users/olrudenk/CLionProjects/FDF/fdf.c" "/Users/olrudenk/CLionProjects/FDF/cmake-build-debug/CMakeFiles/FDF.dir/fdf.c.o"
   "/Users/olrudenk/CLionProjects/FDF/free.c" "/Users/olrudenk/CLionProjects/FDF/cmake-build-debug/CMakeFiles/FDF.dir/free.c.o"
   "/Users/olrudenk/CLionProjects/FDF/libft/srcs/ft_atoi.c" "/Users/olrudenk/CLionProjects/FDF/cmake-build-debug/CMakeFiles/FDF.dir/libft/srcs/ft_atoi.c.o"
   "/Users/olrudenk/CLionProjects/FDF/libft/srcs/ft_bzero.c" "/Users/olrudenk/CLionProjects/FDF/cmake-build-debug/CMakeFiles/FDF.dir/libft/srcs/ft_bzero.c.o"

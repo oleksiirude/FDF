@@ -12,10 +12,19 @@
 
 #include "fdf.h"
 
+int 	myabs(int value)
+{
+	if (value < 0)
+		value += -1;
+	else if (!value)
+		return (0);
+	return (value);
+}
+
 int		atoi_ptr(char **str)
 {
-	int	res;
-	int minus;
+	long long	res;
+	int			minus;
 
 	res = 0;
 	minus = 1;
@@ -34,7 +43,8 @@ int		atoi_ptr(char **str)
 			res = 10 * res + (**str - '0');
 			(*str)++;
 		}
-		return (res * minus);
+		res = res > 300 ? 300 : res;
+		return ((int)(res * minus));
 	}
 	return (0);
 }
