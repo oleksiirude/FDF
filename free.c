@@ -12,13 +12,13 @@
 
 #include "fdf.h"
 
-int 	free_line(char **line)
+int		free_line(char **line)
 {
 	free(*line);
 	return (0);
 }
 
-int	free_lst(t_line **head)
+int		free_lst(t_line **head)
 {
 	t_line *tmp;
 

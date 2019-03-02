@@ -20,13 +20,13 @@ int		error_manage(int dir, char *title, int ac, int error)
 		ft_cprintf("REDCLToo many arguments! GRNCLAborting...STPC\n");
 	else if (dir > 0)
 		ft_cprintf("<REDCL%sSTPC> YELCLis a derictory!"
-			 "GRNCL Aborting...STPC\n", title);
+		"GRNCL Aborting...STPC\n", title);
 	else if (error < 0)
-		ft_cprintf("REDCLCannot open the file. GRNCLAborting...STPC\n");
+		ft_cprintf("REDCLCannot open file. GRNCLAborting...STPC\n");
 	return (-1);
 }
 
-int	free_and_error_handling(t_line **head)
+int		free_and_error_handling(t_line **head)
 {
 	t_line *tmp;
 

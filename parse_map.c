@@ -15,7 +15,7 @@
 int	skip_hex(char **line)
 {
 	(*line)++;
-	while (ft_strchr("AaBbCcDcEeFf0x987654321", **line) && **line)
+	while (ft_strchr("AaBbCcDdEeFf0x987654321", **line) && **line)
 		(*line)++;
 	if (**line != ' ' && **line)
 		return (0);
@@ -33,10 +33,9 @@ int	parse_line(char *line, int *x)
 	counter = 0;
 	while (*line)
 	{
-//		while (*line == ' ')
-//			line++;
-		if (*line == '-' || *line == '+')
+		while (*line == ' ' && *line)
 			line++;
+		*line == '-' || *line == '+' ? line++ : 0;
 		if (!ft_isdigit(*line))
 			return (0);
 		atoi_ptr(&line);
@@ -48,16 +47,13 @@ int	parse_line(char *line, int *x)
 			while (*line == ' ' && *line)
 				line++;
 	}
-	if (!*x)
-		*x = counter;
-	else
-		if (*x != counter)
-			return (0);
+	!*x ? *x = counter : 0;
+	if (*x != counter)
+		return (0);
 	return (1);
 }
 
-
-int parse_map(t_line **lst, int fd)
+int	parse_map(t_line **lst, int fd)
 {
 	int		x;
 	int		counter;
@@ -78,6 +74,8 @@ int parse_map(t_line **lst, int fd)
 		else
 			return (free_line(&line));
 	}
+	if (!counter)
+		return (free_line(&line));
 	(*lst)->size.y = counter;
 	(*lst)->size.x = x;
 	free(line);

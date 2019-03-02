@@ -12,7 +12,7 @@
 
 #include "fdf.h"
 
-int *create_row(char *line, int x)
+int		*create_row(char *line, int x)
 {
 	int i;
 	int *row;
@@ -28,7 +28,7 @@ int *create_row(char *line, int x)
 	return (row);
 }
 
-void create_matrix(t_input **map, t_line *head, t_line *tail)
+void	create_matrix(t_input **map, t_line *head, t_line *tail)
 {
 	int i;
 
