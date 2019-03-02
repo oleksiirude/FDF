@@ -22,9 +22,9 @@ int main(int ac, char **av)
    	ac = 2;
    	sys.dir = open(av[1], O_DIRECTORY);
 //   sys.fd = open(av[1], O_RDONLY);
-//	sys.fd = open("./test_maps/42.fdf", O_RDONLY);
+	sys.fd = open("./test_maps/42.fdf", O_RDONLY);
 //	sys.fd = open("./test_maps/pyramide.fdf", O_RDONLY);
-	sys.fd = open("./test_maps/julia.fdf", O_RDONLY);
+//	sys.fd = open("./test_maps/julia.fdf", O_RDONLY);
 //	sys.fd = open("./test_maps/mars.fdf", O_RDONLY);
 	if (ac != 2 || sys.dir > 0 || sys.fd < 0)
 		return (error_manage(sys.dir, av[1], ac, sys.fd));

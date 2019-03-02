@@ -15,19 +15,14 @@
 int		error_manage(int dir, char *title, int ac, int error)
 {
 	if (ac < 2)
-		ft_cprintf("REDCLToo less arguments!\n"
-				   "GRNCLGive me just one valid map, please."
-	   "\nGRNCLForce exit.STPC\n");
+		ft_cprintf("REDCLToo less arguments! GRNCLAborting...STPC\n");
 	else if (ac > 2)
-		ft_cprintf("REDCLToo many arguments!\n"
-				   "GRNCLGive me just one valid map, please."
-	   "\nGRNCLForce exit.STPC\n");
+		ft_cprintf("REDCLToo many arguments! GRNCLAborting...STPC\n");
 	else if (dir > 0)
-		ft_cprintf("<REDCL%sSTPC> YELCLis a derictory!STPCGRNCL "
-				   "\nForce exit.\n", title);
+		ft_cprintf("<REDCL%sSTPC> YELCLis a derictory!"
+			 "GRNCL Aborting...STPC\n", title);
 	else if (error < 0)
-		ft_cprintf("REDCLError has found into the map.\n"
-			 "GRNCLCheck your map and try again!\nForce exit.STPC\n");
+		ft_cprintf("REDCLCannot open the file. GRNCLAborting...STPC\n");
 	return (-1);
 }
 
@@ -42,6 +37,6 @@ int	free_and_error_handling(t_line **head)
 		free(tmp->line);
 		free(tmp);
 	}
-	ft_cprintf("REDCLError. GRNCLAborting...STPC\n");
+	ft_cprintf("REDCLInvalid map. GRNCLAborting...STPC\n");
 	return (-1);
 }
