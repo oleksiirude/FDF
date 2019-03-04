@@ -28,11 +28,19 @@ unistd.h
 ft_printf.h
 /Users/olrudenk/CLionProjects/FDF/./libft/inc/ft_printf.h
 
+/Users/olrudenk/CLionProjects/FDF/auxiliary.c
+fdf.h
+/Users/olrudenk/CLionProjects/FDF/fdf.h
+
 /Users/olrudenk/CLionProjects/FDF/bresenhams_algorithm.c
 fdf.h
 /Users/olrudenk/CLionProjects/FDF/fdf.h
 
 /Users/olrudenk/CLionProjects/FDF/create_matrix.c
+fdf.h
+/Users/olrudenk/CLionProjects/FDF/fdf.h
+
+/Users/olrudenk/CLionProjects/FDF/error_handling.c
 fdf.h
 /Users/olrudenk/CLionProjects/FDF/fdf.h
 
@@ -43,10 +51,20 @@ fdf.h
 /Users/olrudenk/CLionProjects/FDF/fdf.h
 mlx.h
 -
+math.h
+-
 fcntl.h
 -
 ./libft/inc/libft.h
 /Users/olrudenk/CLionProjects/FDF/./libft/inc/libft.h
+
+/Users/olrudenk/CLionProjects/FDF/free.c
+fdf.h
+/Users/olrudenk/CLionProjects/FDF/fdf.h
+
+/Users/olrudenk/CLionProjects/FDF/main.c
+fdf.h
+/Users/olrudenk/CLionProjects/FDF/fdf.h
 
 /Users/olrudenk/CLionProjects/FDF/parse_map.c
 fdf.h

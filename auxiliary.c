@@ -12,15 +12,6 @@
 
 #include "fdf.h"
 
-int 	myabs(int value)
-{
-	if (value < 0)
-		value += -1;
-	else if (!value)
-		return (0);
-	return (value);
-}
-
 int		atoi_ptr(char **str)
 {
 	long long	res;

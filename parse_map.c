@@ -76,8 +76,8 @@ int	parse_map(t_line **lst, int fd)
 	}
 	if (!counter)
 		return (free_line(&line));
-	(*lst)->size.x = counter;
-	(*lst)->size.y = x;
+	(*lst)->size.y = counter;
+	(*lst)->size.x = x;
 	free(line);
 	return (1);
 }

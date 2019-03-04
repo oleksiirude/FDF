@@ -19,8 +19,8 @@ void	set_up_data(t_input **box, char *title)
 	str = "olrudenk's FDF | map: ";
 	str = ft_strjoin(str, title);
 	(*box)->prm = (t_data*)malloc(sizeof(t_data));
-	(*box)->prm->init.y = 250;
-	(*box)->prm->init.x = 250;
+	(*box)->prm->init.x = 100;
+	(*box)->prm->init.y = 100;
 	(*box)->prm->color = 1361940;
 	(*box)->prm->step = 25;
 	(*box)->prm->z = 0;
@@ -51,12 +51,12 @@ void	create_matrix(t_input **box, t_line *head, t_line *tail, char *title)
 
 	i = 0;
 	start = head;
-	(*box)->size.x = tail->size.x;
 	(*box)->size.y = tail->size.y;
-	(*box)->map = (int**)malloc(sizeof(int*) * (*box)->size.x);
-	while (i < (*box)->size.x)
+	(*box)->size.x = tail->size.x;
+	(*box)->map = (int**)malloc(sizeof(int*) * (*box)->size.y);
+	while (i < (*box)->size.y)
 	{
-		(*box)->map[i++] = create_row(head->line, (*box)->size.y);
+		(*box)->map[i++] = create_row(head->line, (*box)->size.x);
 		head = head->next;
 	}
 	set_up_data(box, title);

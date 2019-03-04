@@ -14,13 +14,16 @@
 # define FDF_H
 
 # include <mlx.h>
+# include <math.h>
 # include <fcntl.h>
 # include "./libft/inc/libft.h"
+# define H_LINE 0
+# define V_LINE 1
 
 typedef struct		s_crd
 {
-	int				y;
 	int				x;
+	int				y;
 }					t_crd;
 
 typedef struct		s_data
@@ -50,14 +53,13 @@ typedef struct		s_input
 	void			*win;
 	struct s_crd	a;
 	struct s_crd	b;
-	struct s_crd	direction;
+	struct s_crd	dir;
 	struct s_crd	size;
 	struct s_data	*prm;
 	int 			**map;
 }					t_input;
 
 
-int 				myabs(int value);
 int					atoi_ptr(char **str);
 int					skip_hex(char **line);
 int					free_line(char **line);
