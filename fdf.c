@@ -24,7 +24,7 @@ void	get_line(t_input *box, t_crd crd)
 
 void	launch_fdf(t_input *box)
 {
-	t_crd	crd;
+	t_crd			crd;
 
 	ft_bzero(&crd, 8);
 	while (crd.y <= box->size.y)

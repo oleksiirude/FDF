@@ -12,6 +12,27 @@
 
 #include "fdf.h"
 
+int setup(int keycode, t_input *box)
+{
+	mlx_clear_window(box->ptr, box->win);
+	ESCAPE(keycode);
+	ZOOM_IN(keycode);
+	ZOOM_OUT(keycode);
+	MOVE_RIGHT(keycode);
+	MOVE_LEFT(keycode);
+	MOVE_UP(keycode);
+	MOVE_DOWN(keycode);
+	COLOR_FORWARD(keycode);
+	COLOR_BACK(keycode);
+	launch_fdf(box);
+	return (0);
+}
+
+int	destroy(void)
+{
+	exit(0);
+}
+
 int	main(int ac, char **av)
 {
 	t_sys	sys;
@@ -31,6 +52,8 @@ int	main(int ac, char **av)
 	box = (t_input*)malloc(sizeof(t_input));
 	create_matrix(&box, head, lst, av[1]);
 	launch_fdf(box);
+	mlx_hook(box->win, 2, 0, setup, box);
+	mlx_hook(box->win, 17, 0, destroy, NULL);
 	mlx_loop(box->ptr);
 	close_fd(&sys.fd, &sys.dir);
 //	ft_print_intarr(box->map, box->size.y, box->size.x);

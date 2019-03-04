@@ -101,6 +101,9 @@
 		<Unit filename="/Users/olrudenk/CLionProjects/FDF/free.c">
 			<Option target="FDF"/>
 		</Unit>
+		<Unit filename="/Users/olrudenk/CLionProjects/FDF/keymap.h">
+			<Option target="FDF"/>
+		</Unit>
 		<Unit filename="/Users/olrudenk/CLionProjects/FDF/libft/srcs/ft_atoi.c">
 			<Option target="FDF"/>
 		</Unit>

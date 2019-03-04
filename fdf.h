@@ -16,9 +16,8 @@
 # include <mlx.h>
 # include <math.h>
 # include <fcntl.h>
+# include "keymap.h"
 # include "./libft/inc/libft.h"
-# define H_LINE 0
-# define V_LINE 1
 
 typedef struct		s_crd
 {
@@ -67,6 +66,7 @@ int					free_lst(t_line **head);
 void				launch_fdf(t_input *map);
 void				close_fd(int *fd, int *dir);
 int					parse_map(t_line **lst, int fd);
+void				set_color(t_input *box, int sign);
 int					free_and_error_handling(t_line	**head);
 int					error_manage(int dir, char *title, int ac, int error);
 void 				create_matrix(t_input **map, t_line *head, t_line *tail, char *title);

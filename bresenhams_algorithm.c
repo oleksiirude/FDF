@@ -14,7 +14,7 @@
 
 void	make_hline(t_input *box, int x_start)
 {
-	while (x_start != box->b.x)
+	while (x_start <= box->b.x)
 	{
 		mlx_pixel_put(box->ptr, box->win,
 				x_start, box->a.y, box->prm->color);
@@ -24,7 +24,7 @@ void	make_hline(t_input *box, int x_start)
 
 void	make_vline(t_input *box, int y_start)
 {
-	while (y_start != box->b.y)
+	while (y_start <= box->b.y)
 	{
 		mlx_pixel_put(box->ptr, box->win,
 				box->a.x, y_start, box->prm->color);
