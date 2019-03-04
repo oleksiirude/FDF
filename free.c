@@ -12,7 +12,7 @@
 
 #include "fdf.h"
 
-void	shut_down(int *fd, int *dir)
+void	close_fd(int *fd, int *dir)
 {
 	close(*fd);
 	close(*dir);

@@ -48,3 +48,7 @@ fcntl.h
 ./libft/inc/libft.h
 /Users/olrudenk/CLionProjects/FDF/./libft/inc/libft.h
 
+/Users/olrudenk/CLionProjects/FDF/parse_map.c
+fdf.h
+/Users/olrudenk/CLionProjects/FDF/fdf.h
+

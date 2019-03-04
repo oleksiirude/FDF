@@ -20,8 +20,8 @@ void	do_hline(t_input *box, int deltay, int deltax, int error)
 	error = deltax * -1;
 	while (box->a.y != box->b.y)
 	{
-		ft_printf("hline\n");
-		ft_printf("%d\n", counter);
+//		ft_printf("hline\n");
+//		ft_printf("%d\n", counter);
 		mlx_pixel_put(box->ptr, box->win, box->a.x,
 				box->a.y, box->prm->color);
 		box->a.x += box->direction.x;
@@ -67,11 +67,11 @@ void	painting_line(t_input *box, t_crd crd)
 	int deltay;
 	int deltax;
 
-	deltay = myabs(box->b.y - box->a.y);
-	deltax = myabs(box->b.x - box->a.x);
-	box->direction.y = box->b.y >= box->a.y ? 1 : -1;
+	deltay = myabs(box->b.x - box->a.x);
+	deltax = myabs(box->b.y - box->a.y);
 	box->direction.x = box->b.x >= box->a.x ? 1 : -1;
-	mlx_pixel_put(box->ptr, box->win, box->a.x, box->a.y, box->prm->color);
+	box->direction.y = box->b.y >= box->a.y ? 1 : -1;
+	mlx_pixel_put(box->ptr, box->win, box->a.y, box->a.x, box->prm->color);
 //	if (deltax <= deltay)
 //		do_hline(box, deltay, deltax, error);
 //	else

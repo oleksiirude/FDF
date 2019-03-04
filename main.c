@@ -29,10 +29,10 @@ int	main(int ac, char **av)
 	if (!parse_map(&lst, sys.fd))
 		return (free_and_error_handling(&head));
 	box = (t_input*)malloc(sizeof(t_input));
-	create_matrix(&box, head, lst);
+	create_matrix(&box, head, lst, av[1]);
 	launch_fdf(box);
 	mlx_loop(box->ptr);
-	shut_down(&sys.fd, &sys.dir);
+	close_fd(&sys.fd, &sys.dir);
 //	ft_print_intarr(box->map, box->size.y, box->size.x);
 //	ft_printf("OK\n");
 	return (0);

@@ -63,11 +63,11 @@ int					skip_hex(char **line);
 int					free_line(char **line);
 int					free_lst(t_line **head);
 void				launch_fdf(t_input *map);
-void				shut_down(int *fd, int *dir);
+void				close_fd(int *fd, int *dir);
 int					parse_map(t_line **lst, int fd);
 int					free_and_error_handling(t_line	**head);
 int					error_manage(int dir, char *title, int ac, int error);
-void 				create_matrix(t_input **map, t_line *head, t_line *tail);
+void 				create_matrix(t_input **map, t_line *head, t_line *tail, char *title);
 void				painting_line(t_input *box, t_crd crd);
 #endif
 

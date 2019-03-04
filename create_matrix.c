@@ -12,8 +12,12 @@
 
 #include "fdf.h"
 
-void	set_up_data(t_input **box)
+void	set_up_data(t_input **box, char *title)
 {
+	char *str;
+
+	str = "olrudenk's FDF | map: ";
+	str = ft_strjoin(str, title);
 	(*box)->prm = (t_data*)malloc(sizeof(t_data));
 	(*box)->prm->init.y = 250;
 	(*box)->prm->init.x = 250;
@@ -21,8 +25,7 @@ void	set_up_data(t_input **box)
 	(*box)->prm->step = 25;
 	(*box)->prm->z = 0;
 	(*box)->ptr = mlx_init();
-	(*box)->win = mlx_new_window((*box)->ptr,
-			1400, 1000, "olrudenk's FDF");
+	(*box)->win = mlx_new_window((*box)->ptr, 1400, 1000, str);
 }
 
 int		*create_row(char *line, int x)
@@ -41,21 +44,21 @@ int		*create_row(char *line, int x)
 	return (row);
 }
 
-void	create_matrix(t_input **box, t_line *head, t_line *tail)
+void	create_matrix(t_input **box, t_line *head, t_line *tail, char *title)
 {
 	int		i;
 	t_line	*start;
 
 	i = 0;
 	start = head;
-	(*box)->size.y = tail->size.y;
 	(*box)->size.x = tail->size.x;
-	(*box)->map = (int**)malloc(sizeof(int*) * (*box)->size.y);
-	while (i < (*box)->size.y)
+	(*box)->size.y = tail->size.y;
+	(*box)->map = (int**)malloc(sizeof(int*) * (*box)->size.x);
+	while (i < (*box)->size.x)
 	{
-		(*box)->map[i++] = create_row(head->line, (*box)->size.x);
+		(*box)->map[i++] = create_row(head->line, (*box)->size.y);
 		head = head->next;
 	}
-	set_up_data(box);
+	set_up_data(box, title);
 	free_lst(&start);
 }
