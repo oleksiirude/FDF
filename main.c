@@ -12,21 +12,22 @@
 
 #include "fdf.h"
 
-int setup(int keycode, t_input *box)
+int setup(int key, t_input *box)
 {
 	mlx_clear_window(box->ptr, box->win);
-	SET_RED(keycode);
-	SET_GREEN(keycode);
-	SET_BLUE(keycode);
-	ESCAPE(keycode);
-	ZOOM_IN(keycode);
-	ZOOM_OUT(keycode);
-	MOVE_RIGHT(keycode);
-	MOVE_LEFT(keycode);
-	MOVE_UP(keycode);
-	MOVE_DOWN(keycode);
-	COLOR_FORWARD(keycode);
-	COLOR_BACK(keycode);
+	SET_RED(key);
+	SET_GREEN(key);
+	SET_BLUE(key);
+	ESCAPE(key);
+	ZOOM_IN(key);
+	ZOOM_OUT(key);
+	MOVE_RIGHT(key);
+	MOVE_LEFT(key);
+	MOVE_UP(key);
+	MOVE_DOWN(key);
+	COLOR_FORWARD(key);
+	COLOR_BACK(key);
+	SHOW_MENU(key);
 	launch_fdf(box);
 	return (0);
 }

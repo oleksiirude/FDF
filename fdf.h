@@ -58,11 +58,11 @@ typedef struct		s_input
 	int 			**map;
 }					t_input;
 
-
 int					atoi_ptr(char **str);
 int					skip_hex(char **line);
 int					free_line(char **line);
 int					free_lst(t_line **head);
+void				show_menu(t_input *box);
 void				launch_fdf(t_input *map);
 void				close_fd(int *fd, int *dir);
 int					parse_map(t_line **lst, int fd);

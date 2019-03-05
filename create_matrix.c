@@ -14,10 +14,13 @@
 
 void	set_up_data(t_input **box, char *title)
 {
-	char	*str;
+	char *str;
+	char *menu;
 
+	menu = " | [press 'M' to see menu bar]";
 	str = "olrudenk's FDF | map: ";
 	str = ft_strjoin(str, title);
+	str = ft_strjoin(str, menu);
 	(*box)->prm = (t_data*)malloc(sizeof(t_data));
 	(*box)->prm->init.x = 100;
 	(*box)->prm->init.y = 100;
