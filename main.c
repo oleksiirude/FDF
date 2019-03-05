@@ -12,7 +12,7 @@
 
 #include "fdf.h"
 
-int setup(int key, t_input *box)
+int	setup(int key, t_input *box)
 {
 	mlx_clear_window(box->ptr, box->win);
 	SET_RED(key);
@@ -28,6 +28,8 @@ int setup(int key, t_input *box)
 	COLOR_FORWARD(key);
 	COLOR_BACK(key);
 	SHOW_MENU(key);
+	Z_PLUS(key);
+	Z_MINUS(key);
 	launch_fdf(box);
 	return (0);
 }
@@ -60,7 +62,5 @@ int	main(int ac, char **av)
 	mlx_hook(box->win, 17, 0, destroy, NULL);
 	mlx_loop(box->ptr);
 	close_fd(&sys.fd, &sys.dir);
-//	ft_print_intarr(box->map, box->size.y, box->size.x);
-//	ft_printf("OK\n");
 	return (0);
 }

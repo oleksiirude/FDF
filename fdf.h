@@ -28,9 +28,9 @@ typedef struct		s_crd
 typedef struct		s_data
 {
 	struct s_crd	init;
-	int 			color;
+	int				color;
 	int				step;
-	int 			z;
+	int				z;
 }					t_data;
 
 typedef struct		s_sys
@@ -42,7 +42,7 @@ typedef struct		s_sys
 typedef struct		s_line
 {
 	struct s_crd	size;
-	char 			*line;
+	char			*line;
 	struct s_line	*next;
 }					t_line;
 
@@ -55,7 +55,7 @@ typedef struct		s_input
 	struct s_crd	dir;
 	struct s_crd	size;
 	struct s_data	*prm;
-	int 			**map;
+	int				**map;
 }					t_input;
 
 int					atoi_ptr(char **str);
@@ -69,8 +69,7 @@ int					parse_map(t_line **lst, int fd);
 void				set_color(t_input *box, int sign);
 int					free_and_error_handling(t_line	**head);
 int					error_manage(int dir, char *title, int ac, int error);
-void 				create_matrix(t_input **map, t_line *head, t_line *tail, char *title);
-void				painting_line(t_input *box, t_crd crd);
+void				create_matrix(t_input **map, t_line *head,
+						t_line *tail, char *title);
+void				painting_line(t_input *box);
 #endif
-
-//lx_string_put(box->ptr, box->win, 700, 500, 1361940, "Hello!");

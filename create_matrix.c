@@ -17,7 +17,8 @@ void	set_up_data(t_input **box, char *title)
 	char *str;
 	char *menu;
 
-	menu = " | [press 'M' to see menu bar]";
+	menu = "													"
+		"				[press 'M' to see menu bar]";
 	str = "olrudenk's FDF | map: ";
 	str = ft_strjoin(str, title);
 	str = ft_strjoin(str, menu);
@@ -25,10 +26,10 @@ void	set_up_data(t_input **box, char *title)
 	(*box)->prm->init.x = 100;
 	(*box)->prm->init.y = 100;
 	(*box)->prm->color = 1361940;
-	(*box)->prm->step = 30;
+	(*box)->prm->step = 5;
 	if ((*box)->prm->step < 10)
 		(*box)->prm->step = 10;
-	(*box)->prm->z = 0;
+	(*box)->prm->z = 1;
 	(*box)->ptr = mlx_init();
 	(*box)->win = mlx_new_window((*box)->ptr, 1800, 1100, str);
 }
