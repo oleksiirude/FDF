@@ -14,7 +14,7 @@
 
 void	set_up_data(t_input **box, char *title)
 {
-	char *str;
+	char	*str;
 
 	str = "olrudenk's FDF | map: ";
 	str = ft_strjoin(str, title);
@@ -27,7 +27,7 @@ void	set_up_data(t_input **box, char *title)
 		(*box)->prm->step = 10;
 	(*box)->prm->z = 0;
 	(*box)->ptr = mlx_init();
-	(*box)->win = mlx_new_window((*box)->ptr, 1400, 1000, str);
+	(*box)->win = mlx_new_window((*box)->ptr, 1800, 1100, str);
 }
 
 int		*create_row(char *line, int x)

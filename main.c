@@ -15,6 +15,9 @@
 int setup(int keycode, t_input *box)
 {
 	mlx_clear_window(box->ptr, box->win);
+	SET_RED(keycode);
+	SET_GREEN(keycode);
+	SET_BLUE(keycode);
 	ESCAPE(keycode);
 	ZOOM_IN(keycode);
 	ZOOM_OUT(keycode);
