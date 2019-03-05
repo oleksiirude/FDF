@@ -34,7 +34,7 @@ int	setup(int key, t_input *box)
 	return (0);
 }
 
-int	destroy(void)
+int	exit_from_fdf(void)
 {
 	exit(0);
 }
@@ -59,7 +59,7 @@ int	main(int ac, char **av)
 	create_matrix(&box, head, lst, av[1]);
 	launch_fdf(box);
 	mlx_hook(box->win, 2, 0, setup, box);
-	mlx_hook(box->win, 17, 0, destroy, NULL);
+	mlx_hook(box->win, 17, 0, exit_from_fdf, NULL);
 	mlx_loop(box->ptr);
 	close_fd(&sys.fd, &sys.dir);
 	return (0);
