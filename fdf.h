@@ -30,7 +30,8 @@ typedef struct		s_data
 	struct s_crd	init;
 	int				color;
 	int				step;
-	int				z;
+	int				v;
+	int 			h;
 }					t_data;
 
 typedef struct		s_sys

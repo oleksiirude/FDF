@@ -17,7 +17,7 @@ void	make_hline(t_input *box, int delta_x, int delta_y)
 	int error;
 
 	error = -delta_x;
-	while (box->a.x != box->b.x || box->a.y != box->b.y)
+	while (box->a.x != box->b.x)
 	{
 		mlx_pixel_put(box->ptr, box->win,
 				box->a.x, box->a.y, box->prm->color);
@@ -36,7 +36,7 @@ void	make_vline(t_input *box, int delta_x, int delta_y)
 	int error;
 
 	error = -delta_y;
-	while (box->a.y != box->b.y || box->a.x != box->b.x)
+	while (box->a.y != box->b.y)
 	{
 		mlx_pixel_put(box->ptr, box->win,
 				box->a.x, box->a.y, box->prm->color);
