@@ -13,6 +13,7 @@
 #ifndef FDF_H
 # define FDF_H
 
+# include <stdio.h>
 # include <mlx.h>
 # include <math.h>
 # include <fcntl.h>
@@ -72,5 +73,5 @@ int					free_and_error_handling(t_line	**head);
 int					error_manage(int dir, char *title, int ac, int error);
 void				create_matrix(t_input **map, t_line *head,
 						t_line *tail, char *title);
-void				painting_line(t_input *box);
+void				painting_line(t_input *box, t_crd x, t_crd y);
 #endif

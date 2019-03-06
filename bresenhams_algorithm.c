@@ -12,57 +12,56 @@
 
 #include "fdf.h"
 
-void	make_hline(t_input *box, int delta_x, int delta_y)
+void	make_hline(t_input *box, t_crd delta, t_crd a, t_crd b)
 {
 	int error;
 
-	error = -delta_x;
-	while (box->a.x != box->b.x)
+	error = -delta.x;
+	while (a.x <= b.x)
 	{
 		mlx_pixel_put(box->ptr, box->win,
-				box->a.x, box->a.y, box->prm->color);
-		box->a.x += box->dir.x;
-		error += 2 * delta_y;
+				a.x, a.y, box->prm->color);
+		a.x += box->dir.x;
+		error += 2 * delta.y;
 		if (error > 0)
 		{
-			error -= 2 * delta_x;
-			box->a.y += box->dir.y;
+			error -= 2 * delta.x;
+			a.y += box->dir.y;
 		}
 	}
 }
 
-void	make_vline(t_input *box, int delta_x, int delta_y)
+void	make_vline(t_input *box, t_crd delta, t_crd a, t_crd b)
 {
 	int error;
 
-	error = -delta_y;
-	while (box->a.y != box->b.y)
+	error = -delta.y;
+	while (a.y != b.y)
 	{
 		mlx_pixel_put(box->ptr, box->win,
-				box->a.x, box->a.y, box->prm->color);
-		box->a.y += box->dir.y;
-		error += 2 * delta_x;
+				a.x, a.y, box->prm->color);
+		a.y += box->dir.y;
+		error += 2 * delta.x;
 		if (error > 0)
 		{
-			error -= 2 * delta_y;
-			box->a.x += box->dir.x;
+			error -= 2 * delta.y;
+			a.x += box->dir.x;
 		}
 	}
 }
 
-void	painting_line(t_input *box)
+void	painting_line(t_input *box, t_crd a, t_crd b)
 {
-	int delta_x;
-	int delta_y;
+	t_crd delta;
 
-	delta_x = abs(box->b.x - box->a.x);
-	delta_y = abs(box->b.y - box->a.y);
-	box->dir.x = box->b.x >= box->a.x ? 1 : -1;
-	box->dir.y = box->b.y >= box->a.y ? 1 : -1;
-	if (delta_y <= delta_x)
-		make_hline(box, delta_x, delta_y);
+	delta.x = abs(b.x - a.x);
+	delta.y = abs(b.y - a.y);
+	box->dir.x = b.x >= a.x ? 1 : -1;
+	box->dir.y = b.y >= a.y ? 1 : -1;
+	if (delta.y <= delta.x)
+		make_hline(box, delta, a, b);
 	else
-		make_vline(box, delta_x, delta_y);
-	mlx_pixel_put(box->ptr, box->win, box->a.x,
-			box->a.y, box->prm->color);
+		make_vline(box, delta, a, b);
+	mlx_pixel_put(box->ptr, box->win, a.x,
+			a.y, box->prm->color);
 }

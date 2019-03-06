@@ -39,7 +39,7 @@ void	show_menu(t_input *box)
 	mlx_string_put(box->ptr, box->win, 1495, 220, 13158600,
 			"11. Decrease width: 'X'");
 	mlx_string_put(box->ptr, box->win, 1495, 240, 13158600,
-			"12. Quit: 'Q'");
+			"12. Quit: 'esc'");
 }
 
 void	set_color(t_input *box, int sign)

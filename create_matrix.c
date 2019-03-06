@@ -27,8 +27,8 @@ void	set_up_data(t_input **box, char *title)
 	(*box)->prm->init.y = 100;
 	(*box)->prm->color = 1361940;
 	(*box)->prm->step = 5;
-	if ((*box)->prm->step < 10)
-		(*box)->prm->step = 10;
+//	if ((*box)->prm->step < 10)
+//		(*box)->prm->step = 10;
 	(*box)->prm->v = 1;
 	(*box)->prm->h = 0;
 	(*box)->ptr = mlx_init();
