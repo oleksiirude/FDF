@@ -23,11 +23,10 @@ void	set_up_data(t_input **box, char *title)
 	str = ft_strjoin(str, title);
 	str = ft_strjoin(str, menu);
 	(*box)->prm = (t_data*)malloc(sizeof(t_data));
-	(*box)->prm->init.x = 250;
-	(*box)->prm->init.y = 250;
+	(*box)->prm->init.x = 10;
+	(*box)->prm->init.y = 10;
 	(*box)->prm->color = 1361940;
 	(*box)->prm->step = 20;
-	(*box)->prm->z = 0;
 	(*box)->prm->rad = 2 * 3.14 / 180;
 	(*box)->ptr = mlx_init();
 	(*box)->win = mlx_new_window((*box)->ptr, 1800, 1100, str);
@@ -86,7 +85,6 @@ void	create_map(t_input **box, t_line *head, t_line *tail, char *title)
 		head = head->next;
 	}
 	(*box)->mtrx = set_up_base_mtrx();
-	ft_printf_intarr((*box)->mtrx, 3, 3);
 	set_up_data(box, title);
 	free_lst(&start);
 }
