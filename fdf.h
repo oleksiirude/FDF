@@ -32,6 +32,7 @@ typedef struct		s_data
 	int				color;
 	int				step;
 	int				z;
+	double 			rad;
 }					t_data;
 
 typedef struct		s_sys
@@ -57,8 +58,8 @@ typedef struct		s_input
 	struct s_crd	size;
 	struct s_data	*prm;
 	int				**map;
-	int 			**base_mtrx;
-	int 			**rot_mtrx;
+	double 			**base_mtrx;
+	double 			**rot_mtrx;
 }					t_input;
 
 int					atoi_ptr(char **str);
@@ -72,7 +73,12 @@ int					parse_map(t_line **lst, int fd);
 void				set_color(t_input *box, int sign);
 int					free_and_error_handling(t_line	**head);
 int					error_manage(int dir, char *title, int ac, int error);
-void				create_matrix(t_input **map, t_line *head,
+void				create_map(t_input **map, t_line *head,
 						t_line *tail, char *title);
 void				bresenhams_algorithm(t_input *box, t_crd x, t_crd y);
+double 				**rot_x(t_input *box, int sign);
+double 				**rot_y(t_input *box, int sign);
+double 				**rot_z(t_input *box, int sign);
+double 				**matrixs_multiplication(double **a, double b[3][3]);
+double 				**set_up_base_mtrx(void);
 #endif

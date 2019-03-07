@@ -15,6 +15,18 @@
 int	setup(int key, t_input *box)
 {
 	mlx_clear_window(box->ptr, box->win);
+	if (key == 89)
+		box->base_mtrx = rot_x(box, 1);
+	else if (key == 91)
+		box->base_mtrx = rot_x(box, -1);
+	else if (key == 86)
+		box->base_mtrx = rot_y(box, 1);
+	else if (key == 87)
+		box->base_mtrx = rot_y(box, -1);
+	else if (key == 83)
+		box->base_mtrx = rot_z(box, 1);
+	else if (key == 84)
+		box->base_mtrx = rot_z(box, -1);
 	SET_RED(key);
 	SET_GREEN(key);
 	SET_BLUE(key);
@@ -54,7 +66,7 @@ int	main(int ac, char **av)
 	if (!parse_map(&lst, sys.fd))
 		return (free_and_error_handling(&head));
 	box = (t_input*)malloc(sizeof(t_input));
-	create_matrix(&box, head, lst, av[1]);
+	create_map(&box, head, lst, av[1]);
 	launch_fdf(box);
 	mlx_hook(box->win, 2, 0, setup, box);
 	mlx_hook(box->win, 17, 0, exit_from_fdf, NULL);

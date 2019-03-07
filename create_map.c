@@ -28,22 +28,23 @@ void	set_up_data(t_input **box, char *title)
 	(*box)->prm->color = 1361940;
 	(*box)->prm->step = 20;
 	(*box)->prm->z = 0;
+	(*box)->prm->rad = 2 * 3.14 / 180;
 	(*box)->ptr = mlx_init();
 	(*box)->win = mlx_new_window((*box)->ptr, 1800, 1100, str);
 }
 
-int 	**set_up_base_mtrx(void)
+double 	**set_up_base_mtrx(void)
 {
-	int i;
-	int k;
-	int **base_mtrx;
+	int		i;
+	int		k;
+	double	**base_mtrx;
 
 	i = -1;
 	k = 0;
-	base_mtrx = (int**)malloc(sizeof(int*) * 3);
+	base_mtrx = (double**)malloc(sizeof(double*) * 3);
 	while (++i <= 3)
 	{
-		base_mtrx[i] = (int*)malloc(sizeof(int) * 3);
+		base_mtrx[i] = (double*)malloc(sizeof(double) * 3);
 		ft_bzero(base_mtrx[i], 12);
 		base_mtrx[i][k++] = 1;
 	}
@@ -66,7 +67,7 @@ int		*create_row(char *line, int x)
 	return (row);
 }
 
-void	create_matrix(t_input **box, t_line *head, t_line *tail, char *title)
+void	create_map(t_input **box, t_line *head, t_line *tail, char *title)
 {
 	int		i;
 	t_line	*start;

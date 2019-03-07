@@ -86,7 +86,7 @@
 		<Unit filename="/Users/olrudenk/CLionProjects/FDF/bresenhams_algorithm.c">
 			<Option target="FDF"/>
 		</Unit>
-		<Unit filename="/Users/olrudenk/CLionProjects/FDF/create_matrix.c">
+		<Unit filename="/Users/olrudenk/CLionProjects/FDF/create_map.c">
 			<Option target="FDF"/>
 		</Unit>
 		<Unit filename="/Users/olrudenk/CLionProjects/FDF/error_handling.c">
@@ -420,6 +420,9 @@
 			<Option target="FDF"/>
 		</Unit>
 		<Unit filename="/Users/olrudenk/CLionProjects/FDF/parse_map.c">
+			<Option target="FDF"/>
+		</Unit>
+		<Unit filename="/Users/olrudenk/CLionProjects/FDF/rotation_matrixs.c">
 			<Option target="FDF"/>
 		</Unit>
 		<Unit filename="/Users/olrudenk/CLionProjects/FDF/CMakeLists.txt">

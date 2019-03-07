@@ -6,7 +6,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_C
   "/Users/olrudenk/CLionProjects/FDF/auxiliary.c" "/Users/olrudenk/CLionProjects/FDF/cmake-build-debug/CMakeFiles/FDF.dir/auxiliary.c.o"
   "/Users/olrudenk/CLionProjects/FDF/bresenhams_algorithm.c" "/Users/olrudenk/CLionProjects/FDF/cmake-build-debug/CMakeFiles/FDF.dir/bresenhams_algorithm.c.o"
-  "/Users/olrudenk/CLionProjects/FDF/create_matrix.c" "/Users/olrudenk/CLionProjects/FDF/cmake-build-debug/CMakeFiles/FDF.dir/create_matrix.c.o"
+  "/Users/olrudenk/CLionProjects/FDF/create_map.c" "/Users/olrudenk/CLionProjects/FDF/cmake-build-debug/CMakeFiles/FDF.dir/create_map.c.o"
   "/Users/olrudenk/CLionProjects/FDF/error_handling.c" "/Users/olrudenk/CLionProjects/FDF/cmake-build-debug/CMakeFiles/FDF.dir/error_handling.c.o"
   "/Users/olrudenk/CLionProjects/FDF/fdf.c" "/Users/olrudenk/CLionProjects/FDF/cmake-build-debug/CMakeFiles/FDF.dir/fdf.c.o"
   "/Users/olrudenk/CLionProjects/FDF/free.c" "/Users/olrudenk/CLionProjects/FDF/cmake-build-debug/CMakeFiles/FDF.dir/free.c.o"
@@ -116,6 +116,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/olrudenk/CLionProjects/FDF/libft/srcs/get_next_line.c" "/Users/olrudenk/CLionProjects/FDF/cmake-build-debug/CMakeFiles/FDF.dir/libft/srcs/get_next_line.c.o"
   "/Users/olrudenk/CLionProjects/FDF/main.c" "/Users/olrudenk/CLionProjects/FDF/cmake-build-debug/CMakeFiles/FDF.dir/main.c.o"
   "/Users/olrudenk/CLionProjects/FDF/parse_map.c" "/Users/olrudenk/CLionProjects/FDF/cmake-build-debug/CMakeFiles/FDF.dir/parse_map.c.o"
+  "/Users/olrudenk/CLionProjects/FDF/rotation_matrixs.c" "/Users/olrudenk/CLionProjects/FDF/cmake-build-debug/CMakeFiles/FDF.dir/rotation_matrixs.c.o"
   )
 set(CMAKE_C_COMPILER_ID "AppleClang")
 

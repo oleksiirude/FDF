@@ -5,31 +5,37 @@ CMakeFiles/FDF.dir/auxiliary.c.o: .././libft/inc/ft_printf.h
 CMakeFiles/FDF.dir/auxiliary.c.o: .././libft/inc/libft.h
 CMakeFiles/FDF.dir/auxiliary.c.o: ../auxiliary.c
 CMakeFiles/FDF.dir/auxiliary.c.o: ../fdf.h
+CMakeFiles/FDF.dir/auxiliary.c.o: ../keymap.h
 
 CMakeFiles/FDF.dir/bresenhams_algorithm.c.o: .././libft/inc/ft_printf.h
 CMakeFiles/FDF.dir/bresenhams_algorithm.c.o: .././libft/inc/libft.h
 CMakeFiles/FDF.dir/bresenhams_algorithm.c.o: ../bresenhams_algorithm.c
 CMakeFiles/FDF.dir/bresenhams_algorithm.c.o: ../fdf.h
+CMakeFiles/FDF.dir/bresenhams_algorithm.c.o: ../keymap.h
 
 CMakeFiles/FDF.dir/create_matrix.c.o: .././libft/inc/ft_printf.h
 CMakeFiles/FDF.dir/create_matrix.c.o: .././libft/inc/libft.h
 CMakeFiles/FDF.dir/create_matrix.c.o: ../create_matrix.c
 CMakeFiles/FDF.dir/create_matrix.c.o: ../fdf.h
+CMakeFiles/FDF.dir/create_matrix.c.o: ../keymap.h
 
 CMakeFiles/FDF.dir/error_handling.c.o: .././libft/inc/ft_printf.h
 CMakeFiles/FDF.dir/error_handling.c.o: .././libft/inc/libft.h
 CMakeFiles/FDF.dir/error_handling.c.o: ../error_handling.c
 CMakeFiles/FDF.dir/error_handling.c.o: ../fdf.h
+CMakeFiles/FDF.dir/error_handling.c.o: ../keymap.h
 
 CMakeFiles/FDF.dir/fdf.c.o: .././libft/inc/ft_printf.h
 CMakeFiles/FDF.dir/fdf.c.o: .././libft/inc/libft.h
 CMakeFiles/FDF.dir/fdf.c.o: ../fdf.c
 CMakeFiles/FDF.dir/fdf.c.o: ../fdf.h
+CMakeFiles/FDF.dir/fdf.c.o: ../keymap.h
 
 CMakeFiles/FDF.dir/free.c.o: .././libft/inc/ft_printf.h
 CMakeFiles/FDF.dir/free.c.o: .././libft/inc/libft.h
 CMakeFiles/FDF.dir/free.c.o: ../fdf.h
 CMakeFiles/FDF.dir/free.c.o: ../free.c
+CMakeFiles/FDF.dir/free.c.o: ../keymap.h
 
 CMakeFiles/FDF.dir/libft/srcs/ft_atoi.c.o: ../libft/inc/ft_printf.h
 CMakeFiles/FDF.dir/libft/srcs/ft_atoi.c.o: ../libft/inc/libft.h
@@ -450,10 +456,12 @@ CMakeFiles/FDF.dir/libft/srcs/get_next_line.c.o: ../libft/srcs/get_next_line.c
 CMakeFiles/FDF.dir/main.c.o: .././libft/inc/ft_printf.h
 CMakeFiles/FDF.dir/main.c.o: .././libft/inc/libft.h
 CMakeFiles/FDF.dir/main.c.o: ../fdf.h
+CMakeFiles/FDF.dir/main.c.o: ../keymap.h
 CMakeFiles/FDF.dir/main.c.o: ../main.c
 
 CMakeFiles/FDF.dir/parse_map.c.o: .././libft/inc/ft_printf.h
 CMakeFiles/FDF.dir/parse_map.c.o: .././libft/inc/libft.h
 CMakeFiles/FDF.dir/parse_map.c.o: ../fdf.h
+CMakeFiles/FDF.dir/parse_map.c.o: ../keymap.h
 CMakeFiles/FDF.dir/parse_map.c.o: ../parse_map.c
 

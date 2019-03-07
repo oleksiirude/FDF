@@ -1474,18 +1474,18 @@ CMakeFiles/FDF.dir/free.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/FDF.dir/free.c.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/olrudenk/CLionProjects/FDF/free.c -o CMakeFiles/FDF.dir/free.c.s
 
-CMakeFiles/FDF.dir/create_matrix.c.o: CMakeFiles/FDF.dir/flags.make
-CMakeFiles/FDF.dir/create_matrix.c.o: ../create_matrix.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/olrudenk/CLionProjects/FDF/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_110) "Building C object CMakeFiles/FDF.dir/create_matrix.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/FDF.dir/create_matrix.c.o   -c /Users/olrudenk/CLionProjects/FDF/create_matrix.c
+CMakeFiles/FDF.dir/create_map.c.o: CMakeFiles/FDF.dir/flags.make
+CMakeFiles/FDF.dir/create_map.c.o: ../create_map.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/olrudenk/CLionProjects/FDF/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_110) "Building C object CMakeFiles/FDF.dir/create_map.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/FDF.dir/create_map.c.o   -c /Users/olrudenk/CLionProjects/FDF/create_map.c
 
-CMakeFiles/FDF.dir/create_matrix.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/FDF.dir/create_matrix.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/olrudenk/CLionProjects/FDF/create_matrix.c > CMakeFiles/FDF.dir/create_matrix.c.i
+CMakeFiles/FDF.dir/create_map.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/FDF.dir/create_map.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/olrudenk/CLionProjects/FDF/create_map.c > CMakeFiles/FDF.dir/create_map.c.i
 
-CMakeFiles/FDF.dir/create_matrix.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/FDF.dir/create_matrix.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/olrudenk/CLionProjects/FDF/create_matrix.c -o CMakeFiles/FDF.dir/create_matrix.c.s
+CMakeFiles/FDF.dir/create_map.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/FDF.dir/create_map.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/olrudenk/CLionProjects/FDF/create_map.c -o CMakeFiles/FDF.dir/create_map.c.s
 
 CMakeFiles/FDF.dir/fdf.c.o: CMakeFiles/FDF.dir/flags.make
 CMakeFiles/FDF.dir/fdf.c.o: ../fdf.c
@@ -1512,6 +1512,19 @@ CMakeFiles/FDF.dir/bresenhams_algorithm.c.i: cmake_force
 CMakeFiles/FDF.dir/bresenhams_algorithm.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/FDF.dir/bresenhams_algorithm.c.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/olrudenk/CLionProjects/FDF/bresenhams_algorithm.c -o CMakeFiles/FDF.dir/bresenhams_algorithm.c.s
+
+CMakeFiles/FDF.dir/rotation_matrixs.c.o: CMakeFiles/FDF.dir/flags.make
+CMakeFiles/FDF.dir/rotation_matrixs.c.o: ../rotation_matrixs.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/olrudenk/CLionProjects/FDF/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_113) "Building C object CMakeFiles/FDF.dir/rotation_matrixs.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/FDF.dir/rotation_matrixs.c.o   -c /Users/olrudenk/CLionProjects/FDF/rotation_matrixs.c
+
+CMakeFiles/FDF.dir/rotation_matrixs.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/FDF.dir/rotation_matrixs.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/olrudenk/CLionProjects/FDF/rotation_matrixs.c > CMakeFiles/FDF.dir/rotation_matrixs.c.i
+
+CMakeFiles/FDF.dir/rotation_matrixs.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/FDF.dir/rotation_matrixs.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/olrudenk/CLionProjects/FDF/rotation_matrixs.c -o CMakeFiles/FDF.dir/rotation_matrixs.c.s
 
 # Object files for target FDF
 FDF_OBJECTS = \
@@ -1624,9 +1637,10 @@ FDF_OBJECTS = \
 "CMakeFiles/FDF.dir/parse_map.c.o" \
 "CMakeFiles/FDF.dir/error_handling.c.o" \
 "CMakeFiles/FDF.dir/free.c.o" \
-"CMakeFiles/FDF.dir/create_matrix.c.o" \
+"CMakeFiles/FDF.dir/create_map.c.o" \
 "CMakeFiles/FDF.dir/fdf.c.o" \
-"CMakeFiles/FDF.dir/bresenhams_algorithm.c.o"
+"CMakeFiles/FDF.dir/bresenhams_algorithm.c.o" \
+"CMakeFiles/FDF.dir/rotation_matrixs.c.o"
 
 # External object files for target FDF
 FDF_EXTERNAL_OBJECTS =
@@ -1740,12 +1754,13 @@ FDF: CMakeFiles/FDF.dir/auxiliary.c.o
 FDF: CMakeFiles/FDF.dir/parse_map.c.o
 FDF: CMakeFiles/FDF.dir/error_handling.c.o
 FDF: CMakeFiles/FDF.dir/free.c.o
-FDF: CMakeFiles/FDF.dir/create_matrix.c.o
+FDF: CMakeFiles/FDF.dir/create_map.c.o
 FDF: CMakeFiles/FDF.dir/fdf.c.o
 FDF: CMakeFiles/FDF.dir/bresenhams_algorithm.c.o
+FDF: CMakeFiles/FDF.dir/rotation_matrixs.c.o
 FDF: CMakeFiles/FDF.dir/build.make
 FDF: CMakeFiles/FDF.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/olrudenk/CLionProjects/FDF/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_113) "Linking C executable FDF"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/olrudenk/CLionProjects/FDF/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_114) "Linking C executable FDF"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/FDF.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

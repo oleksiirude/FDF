@@ -22,8 +22,7 @@ void	make_line(t_input *box, t_crd delta, t_crd a, t_crd b)
 			b.x, b.y, box->prm->color);
 	while (a.x != b.x || a.y != b.y)
 	{
-		mlx_pixel_put(box->ptr, box->win,
-					  a.x, a.y, box->prm->color);
+		mlx_pixel_put(box->ptr, box->win, a.x, a.y, box->prm->color);
 		error2 = error * 2;
 		if (error2 > -delta.y)
 		{
