@@ -16,17 +16,17 @@ int	setup(int key, t_input *box)
 {
 	mlx_clear_window(box->ptr, box->win);
 	if (key == 89)
-		box->base_mtrx = rot_x(box, 1);
+		box->mtrx = rot_x(&box, 1);
 	else if (key == 91)
-		box->base_mtrx = rot_x(box, -1);
+		box->mtrx = rot_x(&box, -1);
 	else if (key == 86)
-		box->base_mtrx = rot_y(box, 1);
+		box->mtrx = rot_y(&box, 1);
 	else if (key == 87)
-		box->base_mtrx = rot_y(box, -1);
+		box->mtrx = rot_y(&box, -1);
 	else if (key == 83)
-		box->base_mtrx = rot_z(box, 1);
+		box->mtrx = rot_z(&box, 1);
 	else if (key == 84)
-		box->base_mtrx = rot_z(box, -1);
+		box->mtrx = rot_z(&box, -1);
 	SET_RED(key);
 	SET_GREEN(key);
 	SET_BLUE(key);

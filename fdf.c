@@ -14,12 +14,13 @@
 
 void	apply_curent_matrix(t_input *box, t_crd crd, t_crd *calc)
 {
-	calc->x = box->base_mtrx[0][0] * crd.x;
-	calc->x += box->base_mtrx[0][1] * crd.y;
-	calc->x += box->base_mtrx[0][2] * box->prm->z;
-	calc->y = box->base_mtrx[1][0] * crd.x;
-	calc->y += box->base_mtrx[1][1] * crd.y;
-	calc->y += box->base_mtrx[1][2] * box->prm->z;
+	calc->x = box->mtrx[0][0] * crd.x;
+	calc->x += box->mtrx[0][1] * crd.y;
+	calc->x += box->mtrx[0][2] * box->map[crd.y][crd.x];
+	calc->y = box->mtrx[1][0] * crd.x;
+	calc->y += box->mtrx[1][1] * crd.y;
+	calc->y += box->mtrx[1][2] * box->map[crd.y][crd.x];
+//	ft_printf("y->%d, x->%d\n", calc->y, calc->x);
 }
 
 void	get_ab_crd(t_input *box, t_crd crd, t_crd *buf)
@@ -53,7 +54,7 @@ void	launch_fdf(t_input *box)
 		while (crd.x < box->size.x)
 		{
 			apply_curent_matrix(box, crd, &calc);
-			get_ab_crd(box, crd, buf);
+			get_ab_crd(box, calc, buf);
 			crd.x++;
 		}
 		crd.x = 0;

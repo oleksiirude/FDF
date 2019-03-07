@@ -12,6 +12,14 @@
 
 #include "fdf.h"
 
+void	free_double_arr(double **arr)
+{
+	free(arr[0]);
+	free(arr[1]);
+	free(arr[2]);
+	free(arr);
+}
+
 void	close_fd(int *fd, int *dir)
 {
 	close(*fd);

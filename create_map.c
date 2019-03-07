@@ -23,8 +23,8 @@ void	set_up_data(t_input **box, char *title)
 	str = ft_strjoin(str, title);
 	str = ft_strjoin(str, menu);
 	(*box)->prm = (t_data*)malloc(sizeof(t_data));
-	(*box)->prm->init.x = 100;
-	(*box)->prm->init.y = 100;
+	(*box)->prm->init.x = 250;
+	(*box)->prm->init.y = 250;
 	(*box)->prm->color = 1361940;
 	(*box)->prm->step = 20;
 	(*box)->prm->z = 0;
@@ -36,18 +36,21 @@ void	set_up_data(t_input **box, char *title)
 double 	**set_up_base_mtrx(void)
 {
 	int		i;
-	int		k;
 	double	**base_mtrx;
 
 	i = -1;
-	k = 0;
 	base_mtrx = (double**)malloc(sizeof(double*) * 3);
-	while (++i <= 3)
-	{
+	while (++i < 3)
 		base_mtrx[i] = (double*)malloc(sizeof(double) * 3);
-		ft_bzero(base_mtrx[i], 12);
-		base_mtrx[i][k++] = 1;
-	}
+	base_mtrx[0][0] = 1;
+	base_mtrx[0][1] = 0;
+	base_mtrx[0][2] = 0;
+	base_mtrx[1][0] = 0;
+	base_mtrx[1][1] = 1;
+	base_mtrx[1][2] = 0;
+	base_mtrx[2][0] = 0;
+	base_mtrx[2][1] = 0;
+	base_mtrx[2][2] = 1;
 	return (base_mtrx);
 }
 
@@ -82,7 +85,8 @@ void	create_map(t_input **box, t_line *head, t_line *tail, char *title)
 		(*box)->map[i++] = create_row(head->line, (*box)->size.x);
 		head = head->next;
 	}
-	(*box)->base_mtrx = set_up_base_mtrx();
+	(*box)->mtrx = set_up_base_mtrx();
+	ft_printf_intarr((*box)->mtrx, 3, 3);
 	set_up_data(box, title);
 	free_lst(&start);
 }

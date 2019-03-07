@@ -58,14 +58,14 @@ typedef struct		s_input
 	struct s_crd	size;
 	struct s_data	*prm;
 	int				**map;
-	double 			**base_mtrx;
-	double 			**rot_mtrx;
+	double 			**mtrx;
 }					t_input;
 
 int					atoi_ptr(char **str);
 int					skip_hex(char **line);
 int					free_line(char **line);
 int					free_lst(t_line **head);
+void				free_double_arr(double **arr);
 void				show_menu(t_input *box);
 void				launch_fdf(t_input *map);
 void				close_fd(int *fd, int *dir);
@@ -76,9 +76,11 @@ int					error_manage(int dir, char *title, int ac, int error);
 void				create_map(t_input **map, t_line *head,
 						t_line *tail, char *title);
 void				bresenhams_algorithm(t_input *box, t_crd x, t_crd y);
-double 				**rot_x(t_input *box, int sign);
-double 				**rot_y(t_input *box, int sign);
-double 				**rot_z(t_input *box, int sign);
+double 				**rot_x(t_input **box, int sign);
+double 				**rot_y(t_input **box, int sign);
+double 				**rot_z(t_input **box, int sign);
 double 				**matrixs_multiplication(double **a, double b[3][3]);
 double 				**set_up_base_mtrx(void);
+
+void				ft_printf_intarr(double **arr, int h, int w);
 #endif
