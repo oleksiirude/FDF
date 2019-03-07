@@ -12,6 +12,16 @@
 
 #include "fdf.h"
 
+void	reset_to_default(t_input **box)
+{
+	free((*box)->mtrx);
+	(*box)->mtrx = set_up_base_mtrx();
+	(*box)->prm->init.x = 500;
+	(*box)->prm->init.y = 300;
+	(*box)->prm->color = 1361940;
+	(*box)->prm->step = 20;
+}
+
 void	apply_curent_matrix(t_input *box, t_crd crd, t_dcrd *calc)
 {
 	calc->x = box->mtrx[0][0] * (crd.x - box->size.x / 2);

@@ -86,4 +86,5 @@ double 				**rot_y(t_input **box, int sign);
 double 				**rot_z(t_input **box, int sign);
 double 				**matrixs_multiplication(double **a, double b[3][3]);
 double 				**set_up_base_mtrx(void);
+void				reset_to_default(t_input **box);
 #endif

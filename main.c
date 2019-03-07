@@ -27,6 +27,8 @@ int	setup(int key, t_input *box)
 		box->mtrx = rot_z(&box, 1);
 	else if (key == 84)
 		box->mtrx = rot_z(&box, -1);
+	else if (key == 2)
+		reset_to_default(&box);
 	SET_RED(key);
 	SET_GREEN(key);
 	SET_BLUE(key);

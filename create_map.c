@@ -23,13 +23,13 @@ void	set_up_data(t_input **box, char *title)
 	str = ft_strjoin(str, title);
 	str = ft_strjoin(str, menu);
 	(*box)->prm = (t_data*)malloc(sizeof(t_data));
-	(*box)->prm->init.x = 10;
-	(*box)->prm->init.y = 10;
+	(*box)->prm->init.x = 500;
+	(*box)->prm->init.y = 300;
 	(*box)->prm->color = 1361940;
 	(*box)->prm->step = 20;
 	(*box)->prm->rad = 2 * 3.14 / 180;
 	(*box)->ptr = mlx_init();
-	(*box)->win = mlx_new_window((*box)->ptr, 1800, 1100, str);
+	(*box)->win = mlx_new_window((*box)->ptr, 1200, 1000, str);
 }
 
 double 	**set_up_base_mtrx(void)
