@@ -31,8 +31,7 @@ typedef struct		s_data
 	struct s_crd	init;
 	int				color;
 	int				step;
-	int				v;
-	int 			h;
+	int				z;
 }					t_data;
 
 typedef struct		s_sys
@@ -58,6 +57,8 @@ typedef struct		s_input
 	struct s_crd	size;
 	struct s_data	*prm;
 	int				**map;
+	int 			**base_mtrx;
+	int 			**rot_mtrx;
 }					t_input;
 
 int					atoi_ptr(char **str);
@@ -73,5 +74,5 @@ int					free_and_error_handling(t_line	**head);
 int					error_manage(int dir, char *title, int ac, int error);
 void				create_matrix(t_input **map, t_line *head,
 						t_line *tail, char *title);
-void				painting_line(t_input *box, t_crd x, t_crd y);
+void				bresenhams_algorithm(t_input *box, t_crd x, t_crd y);
 #endif

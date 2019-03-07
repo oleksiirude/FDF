@@ -26,13 +26,28 @@ void	set_up_data(t_input **box, char *title)
 	(*box)->prm->init.x = 100;
 	(*box)->prm->init.y = 100;
 	(*box)->prm->color = 1361940;
-	(*box)->prm->step = 5;
-//	if ((*box)->prm->step < 10)
-//		(*box)->prm->step = 10;
-	(*box)->prm->v = 1;
-	(*box)->prm->h = 0;
+	(*box)->prm->step = 20;
+	(*box)->prm->z = 0;
 	(*box)->ptr = mlx_init();
 	(*box)->win = mlx_new_window((*box)->ptr, 1800, 1100, str);
+}
+
+int 	**set_up_base_mtrx(void)
+{
+	int i;
+	int k;
+	int **base_mtrx;
+
+	i = -1;
+	k = 0;
+	base_mtrx = (int**)malloc(sizeof(int*) * 3);
+	while (++i <= 3)
+	{
+		base_mtrx[i] = (int*)malloc(sizeof(int) * 3);
+		ft_bzero(base_mtrx[i], 12);
+		base_mtrx[i][k++] = 1;
+	}
+	return (base_mtrx);
 }
 
 int		*create_row(char *line, int x)
@@ -66,6 +81,7 @@ void	create_matrix(t_input **box, t_line *head, t_line *tail, char *title)
 		(*box)->map[i++] = create_row(head->line, (*box)->size.x);
 		head = head->next;
 	}
+	(*box)->base_mtrx = set_up_base_mtrx();
 	set_up_data(box, title);
 	free_lst(&start);
 }

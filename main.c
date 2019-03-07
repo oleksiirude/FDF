@@ -28,10 +28,6 @@ int	setup(int key, t_input *box)
 	COLOR_FORWARD(key);
 	COLOR_BACK(key);
 	SHOW_MENU(key);
-	V_PLUS(key);
-	V_MINUS(key);
-	H_PLUS(key);
-	H_MINUS(key);
 	launch_fdf(box);
 	return (0);
 }
