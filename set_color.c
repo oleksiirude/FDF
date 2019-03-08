@@ -14,20 +14,42 @@
 
 void	set_color_x(t_input **box, t_crd global)
 {
-	if ((*box)->map[global.y][global.x] > 0 && (*box)->map[global.y][global.x - 1] > 0)
+	if ((*box)->map[global.y][global.x] > 0
+	&& (*box)->map[global.y][global.x - 1] > 0)
+	{
 		(*box)->prm->color = (*box)->prm->set_plus_color;
-	else if ((*box)->map[global.y][global.x] < 0 && (*box)->map[global.y][global.x - 1] < 0)
+		if ((*box)->move < 0)
+			(*box)->prm->color = (*box)->prm->set_minus_color;
+	}
+	else if ((*box)->map[global.y][global.x] < 0
+	&& (*box)->map[global.y][global.x - 1] < 0)
+	{
 		(*box)->prm->color = (*box)->prm->set_minus_color;
-	else if (!(*box)->map[global.y][global.x] && !(*box)->map[global.y][global.x - 1])
+		if ((*box)->move > 1)
+			(*box)->prm->color = (*box)->prm->set_plus_color;
+	}
+	else if (!(*box)->map[global.y][global.x]
+	&& !(*box)->map[global.y][global.x - 1])
 		(*box)->prm->color = (*box)->prm->set_zero_color;
 }
 
 void	set_color_y(t_input **box, t_crd global)
 {
-	if ((*box)->map[global.y][global.x] > 0 && (*box)->map[global.y - 1][global.x] > 0)
+	if ((*box)->map[global.y][global.x] > 0
+	&& (*box)->map[global.y - 1][global.x] > 0)
+	{
 		(*box)->prm->color = (*box)->prm->set_plus_color;
-	else if ((*box)->map[global.y][global.x] < 0 && (*box)->map[global.y - 1][global.x] < 0)
+		if ((*box)->move < 0)
+			(*box)->prm->color = (*box)->prm->set_minus_color;
+	}
+	else if ((*box)->map[global.y][global.x] < 0
+	&& (*box)->map[global.y - 1][global.x] < 0)
+	{
 		(*box)->prm->color = (*box)->prm->set_minus_color;
-	else if (!(*box)->map[global.y][global.x] && !(*box)->map[global.y - 1][global.x])
+		if ((*box)->move > 1)
+			(*box)->prm->color = (*box)->prm->set_plus_color;
+	}
+	else if (!(*box)->map[global.y][global.x]
+	&& !(*box)->map[global.y - 1][global.x])
 		(*box)->prm->color = (*box)->prm->set_zero_color;
 }

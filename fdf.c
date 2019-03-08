@@ -19,6 +19,7 @@ void	reset_to_default(t_input **box)
 	(*box)->prm->init.x = 1400 / 2 - ((*box)->size.x / 2 * (*box)->prm->step);
 	(*box)->prm->init.y = 1200 / 2 - ((*box)->size.y / 2 * (*box)->prm->step);
 	(*box)->prm->color = 1361940;
+	(*box)->move = 1;
 	set_step(box);
 	(*box)->prm->set_zero_color = 196354;
 	(*box)->prm->set_plus_color = 16777215;
@@ -29,10 +30,10 @@ void	apply_curent_matrix(t_input *box, t_crd crd, t_dcrd *calc)
 {
 	calc->x = box->mtrx[0][0] * (crd.x - box->size.x / 2);
 	calc->x += box->mtrx[0][1] * (crd.y - box->size.y / 2);
-	calc->x += box->mtrx[0][2] * box->map[crd.y][crd.x];
+	calc->x += box->mtrx[0][2] * box->map[crd.y][crd.x] * box->move;
 	calc->y = box->mtrx[1][0] * (crd.x - box->size.x / 2);
 	calc->y += box->mtrx[1][1] * (crd.y - box->size.y / 2);
-	calc->y += box->mtrx[1][2] * box->map[crd.y][crd.x];
+	calc->y += box->mtrx[1][2] * box->map[crd.y][crd.x] * box->move;
 	calc->x += box->size.x / 2;
 	calc->y += box->size.y / 2;
 }

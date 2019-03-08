@@ -36,6 +36,7 @@ void	set_up_data(t_input **box, char *title)
 	str = "olrudenk's FDF | map: ";
 	str = ft_strjoin(str, title);
 	str = ft_strjoin(str, menu);
+	(*box)->move = 1;
 	(*box)->prm = (t_data*)malloc(sizeof(t_data));
 	(*box)->prm->color = 1361940;
 	(*box)->prm->set_zero_color = 196354;
@@ -49,7 +50,7 @@ void	set_up_data(t_input **box, char *title)
 	(*box)->win = mlx_new_window((*box)->ptr, 1400, 1200, str);
 }
 
-double 	**set_up_base_mtrx(void)
+double	**set_up_base_mtrx(void)
 {
 	int		i;
 	double	**base_mtrx;

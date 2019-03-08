@@ -12,50 +12,67 @@
 
 #include "fdf.h"
 
-int	setup(int key, t_input *box)
+void	setup3(int key, t_input *box)
 {
-	mlx_clear_window(box->ptr, box->win);
-	if (key == 89)
-		box->mtrx = rot_x(&box, 1);
-	else if (key == 91)
-		box->mtrx = rot_x(&box, -1);
-	else if (key == 86)
-		box->mtrx = rot_y(&box, 1);
-	else if (key == 87)
-		box->mtrx = rot_y(&box, -1);
-	else if (key == 83)
-		box->mtrx = rot_z(&box, 1);
-	else if (key == 84)
-		box->mtrx = rot_z(&box, -1);
-	else if (key == 2)
-		reset_to_default(&box);
-	else if (key == 34)
-		box->mtrx = isometric_pojection(&box);
-	else if (key == 31)
-		box->mtrx = orthogonal_side(&box);
-	else if (key == 12)
-		box->prm->set_plus_color +=5;
-	else if (key == 13)
-		box->prm->set_plus_color -=5;
-	else if (key == 0)
-		box->prm->set_zero_color +=5;
-	else if (key == 1)
-		box->prm->set_zero_color -=5;
-	else if (key == 6)
-		box->prm->set_minus_color +=5;
-	else if (key == 7)
-		box->prm->set_minus_color -=5;
+	M_CL_M(key);
+	M_CL_P(key);
+	Z_CL_M(key);
+	Z_CL_P(key);
+	P_CL_M(key);
+	P_CL_P(key);
+	MOVE_M(key);
+	MOVE_P(key);
+	MENU(key);
+	RESET(key);
+}
+
+void	setup2(int key, t_input *box)
+{
+	if (key == 125)
+	{
+		box->prm->init.y += 10;
+		if (box->prm->init.y > 650)
+			box->prm->init.y = 650;
+	}
+	ROT_X_P(key);
+	ROT_X_M(key);
+	ROT_Y_P(key);
+	ROT_Y_M(key);
+	ROT_Z_P(key);
+	ROT_Z_M(key)
+	ISO_PROJ(key);
+	ORT_PROJ(key);
 	SET_RED(key);
 	SET_GREEN(key);
 	SET_BLUE(key);
 	ESCAPE(key);
-	ZOOM_IN(key);
-	ZOOM_OUT(key);
 	MOVE_RIGHT(key);
 	MOVE_LEFT(key);
-	MOVE_UP(key);
-	MOVE_DOWN(key);
-	SHOW_MENU(key);
+	setup3(key, box);
+}
+
+int	setup(int key, t_input *box)
+{
+	mlx_clear_window(box->ptr, box->win);
+	if (key == 69)
+	{
+		box->prm->step += 1;
+		box->prm->init.x -= box->size.x / 2;
+		box->prm->init.y -= box->size.y / 2;
+	}
+	else if (key == 78 && box->prm->step > 0)
+	{
+		box->prm->step -= 1;
+		box->prm->init.x += box->size.x / 2;
+		box->prm->init.y += box->size.y / 2;
+	}
+	else if (key == 126)
+	{
+		box->prm->init.y -= 10;
+		if (box->prm->init.y < 10)
+			box->prm->init.y = 10;
+	}
+	setup2(key, box);
 	launch_fdf(box);
 	return (0);
 }

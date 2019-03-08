@@ -35,11 +35,11 @@ typedef struct		s_data
 {
 	struct s_crd	init;
 	int				color;
-	int 			set_zero_color;
-	int 			set_plus_color;
-	int 			set_minus_color;
+	int				set_zero_color;
+	int				set_plus_color;
+	int				set_minus_color;
 	int				step;
-	double 			rad;
+	double			rad;
 }					t_data;
 
 typedef struct		s_sys
@@ -63,9 +63,10 @@ typedef struct		s_input
 	struct s_crd	b;
 	struct s_crd	dir;
 	struct s_crd	size;
+	int				move;
 	struct s_data	*prm;
 	int				**map;
-	double 			**mtrx;
+	double			**mtrx;
 }					t_input;
 
 int					atoi_ptr(char **str);
@@ -82,11 +83,11 @@ int					error_manage(int dir, char *title, int ac, int error);
 void				create_map(t_input **map, t_line *head,
 						t_line *tail, char *title);
 void				bresenhams_algorithm(t_input *box, t_crd x, t_crd y);
-double 				**rot_x(t_input **box, int sign);
-double 				**rot_y(t_input **box, int sign);
-double 				**rot_z(t_input **box, int sign);
-double 				**matrixs_multiplication(double **a, double b[3][3]);
-double 				**set_up_base_mtrx(void);
+double				**rot_x(t_input **box, int sign);
+double				**rot_y(t_input **box, int sign);
+double				**rot_z(t_input **box, int sign);
+double				**matrixs_multiplication(double **a, double b[3][3]);
+double				**set_up_base_mtrx(void);
 void				reset_to_default(t_input **box);
 double				**isometric_pojection(t_input **box);
 double				**orthogonal_side(t_input **box);

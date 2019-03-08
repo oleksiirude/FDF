@@ -12,7 +12,7 @@
 
 #include "fdf.h"
 
-double **rot_x(t_input **box, int sign)
+double	**rot_x(t_input **box, int sign)
 {
 	double **newmtrx;
 	double rot_x[3][3];
@@ -31,7 +31,7 @@ double **rot_x(t_input **box, int sign)
 	return (newmtrx);
 }
 
-double **rot_y(t_input **box, int sign)
+double	**rot_y(t_input **box, int sign)
 {
 	double **newmtrx;
 	double rot_y[3][3];
@@ -50,7 +50,7 @@ double **rot_y(t_input **box, int sign)
 	return (newmtrx);
 }
 
-double **rot_z(t_input **box, int sign)
+double	**rot_z(t_input **box, int sign)
 {
 	double **newmtrx;
 	double rot_z[3][3];

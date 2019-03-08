@@ -12,7 +12,7 @@
 
 #include "fdf.h"
 
-void	to_zero(t_crd *a, t_crd *b, t_crd *c)
+void		to_zero(t_crd *a, t_crd *b, t_crd *c)
 {
 	ft_bzero(a, 8);
 	ft_bzero(b, 8);
@@ -47,29 +47,35 @@ double		**matrixs_multiplication(double **a, double b[3][3])
 	return (c);
 }
 
-void	show_menu(t_input *box)
+void		show_menu(t_input *box)
 {
-	mlx_string_put(box->ptr, box->win, 1600, 2, 1361940,
+	mlx_string_put(box->ptr, box->win, 1185, 2, 1361940,
 			"Menu bar");
-	mlx_string_put(box->ptr, box->win, 1495, 20, 13158600,
+	mlx_string_put(box->ptr, box->win, 1030, 20, 13158600,
 			"1. Map move: control arrows");
-	mlx_string_put(box->ptr, box->win, 1495, 40, 13158600,
-			"2. Red color: 'R'");
-	mlx_string_put(box->ptr, box->win, 1495, 60, 13158600,
-			"3. Green color: 'G'");
-	mlx_string_put(box->ptr, box->win, 1495, 80, 13158600,
-			"4. Blue color: 'B'");
-	mlx_string_put(box->ptr, box->win, 1495, 100, 13158600,
-			"5. Play with color: 'C' && 'V'");
-	mlx_string_put(box->ptr, box->win, 1495, 120, 13158600,
-			"6. Zoom in: '-' (num zone)");
-	mlx_string_put(box->ptr, box->win, 1495, 140, 13158600,
-			"7. Zoom out: '+' (num zone)");
-	mlx_string_put(box->ptr, box->win, 1495, 160, 13158600,
-			"8. Quit: 'esc'");
+	mlx_string_put(box->ptr, box->win, 1030, 40, 13158600,
+			"2. RGB zero surface: 'R', 'G', 'B'");
+	mlx_string_put(box->ptr, box->win, 1030, 60, 13158600,
+			"4. Color play '+' surface: 'Q' && 'W'");
+	mlx_string_put(box->ptr, box->win, 1030, 80, 13158600,
+			"5. Color play '0' surface: 'A' && 'S'");
+	mlx_string_put(box->ptr, box->win, 1030, 100, 13158600,
+			"6. Color play '-' surface: 'Z' && 'X'");
+	mlx_string_put(box->ptr, box->win, 1030, 120, 13158600,
+			"NUM zone:");
+	mlx_string_put(box->ptr, box->win, 1030, 140, 13158600,
+			"7. Rotate x: '7' && '8'");
+	mlx_string_put(box->ptr, box->win, 1030, 160, 13158600,
+			"8. Rotate y: '4' && '5'");
+	mlx_string_put(box->ptr, box->win, 1030, 180, 13158600,
+			"9. Rotate z: '1' && '2'");
+	mlx_string_put(box->ptr, box->win, 1030, 200, 13158600,
+			"10. Zoom in/out: '+' && '-'");
+	mlx_string_put(box->ptr, box->win, 1030, 220, 13158600,
+			"7. Quit: 'esc'");
 }
 
-int		atoi_ptr(char **str)
+int			atoi_ptr(char **str)
 {
 	long long	res;
 	int			minus;
