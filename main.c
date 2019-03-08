@@ -39,7 +39,7 @@ void	setup2(int key, t_input *box)
 	ROT_Y_P(key);
 	ROT_Y_M(key);
 	ROT_Z_P(key);
-	ROT_Z_M(key)
+	ROT_Z_M(key);
 	ISO_PROJ(key);
 	ORT_PROJ(key);
 	SET_RED(key);
@@ -51,7 +51,7 @@ void	setup2(int key, t_input *box)
 	setup3(key, box);
 }
 
-int	setup(int key, t_input *box)
+int		setup(int key, t_input *box)
 {
 	mlx_clear_window(box->ptr, box->win);
 	if (key == 69)
@@ -77,12 +77,12 @@ int	setup(int key, t_input *box)
 	return (0);
 }
 
-int	exit_from_fdf(void)
+int		exit_from_fdf(void)
 {
 	exit(0);
 }
 
-int	main(int ac, char **av)
+int		main(int ac, char **av)
 {
 	t_sys	sys;
 	t_line	*lst;
