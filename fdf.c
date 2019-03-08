@@ -16,10 +16,13 @@ void	reset_to_default(t_input **box)
 {
 	free((*box)->mtrx);
 	(*box)->mtrx = set_up_base_mtrx();
-	(*box)->prm->init.x = 500;
-	(*box)->prm->init.y = 300;
+	(*box)->prm->init.x = 1400 / 2 - ((*box)->size.x / 2 * (*box)->prm->step);
+	(*box)->prm->init.y = 1200 / 2 - ((*box)->size.y / 2 * (*box)->prm->step);
 	(*box)->prm->color = 1361940;
-	(*box)->prm->step = 20;
+	set_step(box);
+	(*box)->prm->set_zero_color = 196354;
+	(*box)->prm->set_plus_color = 16777215;
+	(*box)->prm->set_minus_color = 16712194;
 }
 
 void	apply_curent_matrix(t_input *box, t_crd crd, t_dcrd *calc)
@@ -36,20 +39,28 @@ void	apply_curent_matrix(t_input *box, t_crd crd, t_dcrd *calc)
 
 void	get_ab_crd(t_input *box, t_dcrd crd, t_crd *buf, t_crd global)
 {
-	static int i = 0;
+	static int		i = 0;
 
 	i = !global.x ? 0 : i;
 	box->b.x = box->prm->init.x + crd.x * box->prm->step;
 	box->b.y = box->prm->init.y + crd.y * box->prm->step;
 	if (global.x)
+	{
+		set_color_x(&box, global);
 		bresenhams_algorithm(box, box->a, box->b);
+	}
 	box->a.x = box->b.x;
 	box->a.y = box->b.y;
+	box->prm->color = box->prm->set_zero_color;
 	if (global.y)
+	{
+		set_color_y(&box, global);
 		bresenhams_algorithm(box, box->a, buf[i]);
+	}
 	buf[i].x = box->b.x;
 	buf[i].y = box->b.y;
 	i++;
+	box->prm->color = box->prm->set_zero_color;
 }
 
 void	launch_fdf(t_input *box)

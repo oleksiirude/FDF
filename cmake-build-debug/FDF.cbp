@@ -422,7 +422,13 @@
 		<Unit filename="/Users/olrudenk/CLionProjects/FDF/parse_map.c">
 			<Option target="FDF"/>
 		</Unit>
+		<Unit filename="/Users/olrudenk/CLionProjects/FDF/projections.c">
+			<Option target="FDF"/>
+		</Unit>
 		<Unit filename="/Users/olrudenk/CLionProjects/FDF/rotation_matrixs.c">
+			<Option target="FDF"/>
+		</Unit>
+		<Unit filename="/Users/olrudenk/CLionProjects/FDF/set_color.c">
 			<Option target="FDF"/>
 		</Unit>
 		<Unit filename="/Users/olrudenk/CLionProjects/FDF/CMakeLists.txt">

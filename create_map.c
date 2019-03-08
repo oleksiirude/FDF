@@ -12,6 +12,20 @@
 
 #include "fdf.h"
 
+void	set_step(t_input **box)
+{
+	if ((*box)->size.x < 25)
+		(*box)->prm->step = 25;
+	else if ((*box)->size.x >= 25 && (*box)->size.x < 50)
+		(*box)->prm->step = 20;
+	else if ((*box)->size.x >= 50 && (*box)->size.x < 200)
+		(*box)->prm->step = 13;
+	else if ((*box)->size.x >= 200 && (*box)->size.x < 250)
+		(*box)->prm->step = 6;
+	else if ((*box)->size.x >= 250)
+		(*box)->prm->step = 2;
+}
+
 void	set_up_data(t_input **box, char *title)
 {
 	char *str;
@@ -23,13 +37,16 @@ void	set_up_data(t_input **box, char *title)
 	str = ft_strjoin(str, title);
 	str = ft_strjoin(str, menu);
 	(*box)->prm = (t_data*)malloc(sizeof(t_data));
-	(*box)->prm->init.x = 500;
-	(*box)->prm->init.y = 300;
 	(*box)->prm->color = 1361940;
-	(*box)->prm->step = 20;
+	(*box)->prm->set_zero_color = 196354;
+	(*box)->prm->set_plus_color = 16777215;
+	(*box)->prm->set_minus_color = 16712194;
+	set_step(box);
+	(*box)->prm->init.x = 1400 / 2 - ((*box)->size.x / 2 * (*box)->prm->step);
+	(*box)->prm->init.y = 1200 / 2 - ((*box)->size.y / 2 * (*box)->prm->step);
 	(*box)->prm->rad = 2 * 3.14 / 180;
 	(*box)->ptr = mlx_init();
-	(*box)->win = mlx_new_window((*box)->ptr, 1200, 1000, str);
+	(*box)->win = mlx_new_window((*box)->ptr, 1400, 1200, str);
 }
 
 double 	**set_up_base_mtrx(void)

@@ -69,14 +69,6 @@ void	show_menu(t_input *box)
 			"8. Quit: 'esc'");
 }
 
-void	set_color(t_input *box, int sign)
-{
-	if (sign)
-		box->prm->color += 5;
-	else
-		box->prm->color -= 5;
-}
-
 int		atoi_ptr(char **str)
 {
 	long long	res;

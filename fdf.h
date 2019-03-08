@@ -13,7 +13,6 @@
 #ifndef FDF_H
 # define FDF_H
 
-# include <stdio.h>
 # include <mlx.h>
 # include <math.h>
 # include <fcntl.h>
@@ -22,8 +21,8 @@
 
 typedef struct		s_dcrd
 {
-	double				x;
-	double				y;
+	double			x;
+	double			y;
 }					t_dcrd;
 
 typedef struct		s_crd
@@ -36,6 +35,9 @@ typedef struct		s_data
 {
 	struct s_crd	init;
 	int				color;
+	int 			set_zero_color;
+	int 			set_plus_color;
+	int 			set_minus_color;
 	int				step;
 	double 			rad;
 }					t_data;
@@ -75,7 +77,6 @@ void				show_menu(t_input *box);
 void				launch_fdf(t_input *map);
 void				close_fd(int *fd, int *dir);
 int					parse_map(t_line **lst, int fd);
-void				set_color(t_input *box, int sign);
 int					free_and_error_handling(t_line	**head);
 int					error_manage(int dir, char *title, int ac, int error);
 void				create_map(t_input **map, t_line *head,
@@ -87,4 +88,9 @@ double 				**rot_z(t_input **box, int sign);
 double 				**matrixs_multiplication(double **a, double b[3][3]);
 double 				**set_up_base_mtrx(void);
 void				reset_to_default(t_input **box);
+double				**isometric_pojection(t_input **box);
+double				**orthogonal_side(t_input **box);
+void				set_color_x(t_input **box, t_crd global);
+void				set_color_y(t_input **box, t_crd global);
+void				set_step(t_input **box);
 #endif

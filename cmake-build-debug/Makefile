@@ -3147,6 +3147,33 @@ parse_map.c.s:
 	$(MAKE) -f CMakeFiles/FDF.dir/build.make CMakeFiles/FDF.dir/parse_map.c.s
 .PHONY : parse_map.c.s
 
+projections.o: projections.c.o
+
+.PHONY : projections.o
+
+# target to build an object file
+projections.c.o:
+	$(MAKE) -f CMakeFiles/FDF.dir/build.make CMakeFiles/FDF.dir/projections.c.o
+.PHONY : projections.c.o
+
+projections.i: projections.c.i
+
+.PHONY : projections.i
+
+# target to preprocess a source file
+projections.c.i:
+	$(MAKE) -f CMakeFiles/FDF.dir/build.make CMakeFiles/FDF.dir/projections.c.i
+.PHONY : projections.c.i
+
+projections.s: projections.c.s
+
+.PHONY : projections.s
+
+# target to generate assembly for a file
+projections.c.s:
+	$(MAKE) -f CMakeFiles/FDF.dir/build.make CMakeFiles/FDF.dir/projections.c.s
+.PHONY : projections.c.s
+
 rotation_matrixs.o: rotation_matrixs.c.o
 
 .PHONY : rotation_matrixs.o
@@ -3173,6 +3200,33 @@ rotation_matrixs.s: rotation_matrixs.c.s
 rotation_matrixs.c.s:
 	$(MAKE) -f CMakeFiles/FDF.dir/build.make CMakeFiles/FDF.dir/rotation_matrixs.c.s
 .PHONY : rotation_matrixs.c.s
+
+set_color.o: set_color.c.o
+
+.PHONY : set_color.o
+
+# target to build an object file
+set_color.c.o:
+	$(MAKE) -f CMakeFiles/FDF.dir/build.make CMakeFiles/FDF.dir/set_color.c.o
+.PHONY : set_color.c.o
+
+set_color.i: set_color.c.i
+
+.PHONY : set_color.i
+
+# target to preprocess a source file
+set_color.c.i:
+	$(MAKE) -f CMakeFiles/FDF.dir/build.make CMakeFiles/FDF.dir/set_color.c.i
+.PHONY : set_color.c.i
+
+set_color.s: set_color.c.s
+
+.PHONY : set_color.s
+
+# target to generate assembly for a file
+set_color.c.s:
+	$(MAKE) -f CMakeFiles/FDF.dir/build.make CMakeFiles/FDF.dir/set_color.c.s
+.PHONY : set_color.c.s
 
 # Help Target
 help:
@@ -3519,9 +3573,15 @@ help:
 	@echo "... parse_map.o"
 	@echo "... parse_map.i"
 	@echo "... parse_map.s"
+	@echo "... projections.o"
+	@echo "... projections.i"
+	@echo "... projections.s"
 	@echo "... rotation_matrixs.o"
 	@echo "... rotation_matrixs.i"
 	@echo "... rotation_matrixs.s"
+	@echo "... set_color.o"
+	@echo "... set_color.i"
+	@echo "... set_color.s"
 .PHONY : help
 
 

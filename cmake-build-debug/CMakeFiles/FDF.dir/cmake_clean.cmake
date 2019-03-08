@@ -112,6 +112,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/FDF.dir/fdf.c.o"
   "CMakeFiles/FDF.dir/bresenhams_algorithm.c.o"
   "CMakeFiles/FDF.dir/rotation_matrixs.c.o"
+  "CMakeFiles/FDF.dir/projections.c.o"
+  "CMakeFiles/FDF.dir/set_color.c.o"
   "FDF.pdb"
   "FDF"
 )

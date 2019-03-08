@@ -116,7 +116,9 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/olrudenk/CLionProjects/FDF/libft/srcs/get_next_line.c" "/Users/olrudenk/CLionProjects/FDF/cmake-build-debug/CMakeFiles/FDF.dir/libft/srcs/get_next_line.c.o"
   "/Users/olrudenk/CLionProjects/FDF/main.c" "/Users/olrudenk/CLionProjects/FDF/cmake-build-debug/CMakeFiles/FDF.dir/main.c.o"
   "/Users/olrudenk/CLionProjects/FDF/parse_map.c" "/Users/olrudenk/CLionProjects/FDF/cmake-build-debug/CMakeFiles/FDF.dir/parse_map.c.o"
+  "/Users/olrudenk/CLionProjects/FDF/projections.c" "/Users/olrudenk/CLionProjects/FDF/cmake-build-debug/CMakeFiles/FDF.dir/projections.c.o"
   "/Users/olrudenk/CLionProjects/FDF/rotation_matrixs.c" "/Users/olrudenk/CLionProjects/FDF/cmake-build-debug/CMakeFiles/FDF.dir/rotation_matrixs.c.o"
+  "/Users/olrudenk/CLionProjects/FDF/set_color.c" "/Users/olrudenk/CLionProjects/FDF/cmake-build-debug/CMakeFiles/FDF.dir/set_color.c.o"
   )
 set(CMAKE_C_COMPILER_ID "AppleClang")
 

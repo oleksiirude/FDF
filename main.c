@@ -29,6 +29,22 @@ int	setup(int key, t_input *box)
 		box->mtrx = rot_z(&box, -1);
 	else if (key == 2)
 		reset_to_default(&box);
+	else if (key == 34)
+		box->mtrx = isometric_pojection(&box);
+	else if (key == 31)
+		box->mtrx = orthogonal_side(&box);
+	else if (key == 12)
+		box->prm->set_plus_color +=5;
+	else if (key == 13)
+		box->prm->set_plus_color -=5;
+	else if (key == 0)
+		box->prm->set_zero_color +=5;
+	else if (key == 1)
+		box->prm->set_zero_color -=5;
+	else if (key == 6)
+		box->prm->set_minus_color +=5;
+	else if (key == 7)
+		box->prm->set_minus_color -=5;
 	SET_RED(key);
 	SET_GREEN(key);
 	SET_BLUE(key);
@@ -39,8 +55,6 @@ int	setup(int key, t_input *box)
 	MOVE_LEFT(key);
 	MOVE_UP(key);
 	MOVE_DOWN(key);
-	COLOR_FORWARD(key);
-	COLOR_BACK(key);
 	SHOW_MENU(key);
 	launch_fdf(box);
 	return (0);
