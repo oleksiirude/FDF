@@ -5,9 +5,9 @@ Basically, my goal was to code program that takes data from a file and based on 
 
 ![alt text](https://github.com/oleksiirude/FDF/blob/master/img/fdf.png)
 
-![alt text](https://github.com/oleksiirude/FDF/blob/master/img/fdf1.png)
-
 My FDF can rotate this figure in any angle. 
+
+![alt text](https://github.com/oleksiirude/FDF/blob/master/img/fdf1.png)
 
 You can see all functional by pressing 'M' when open fdf.exe.
 
