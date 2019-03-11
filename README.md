@@ -13,7 +13,7 @@ You can see all functional by pressing 'M' when open fdf.exe.
 
 ![alt text](https://github.com/oleksiirude/FDF/blob/master/img/fdf2.png)
 
-Launch example [./fdf ./test_maps/42.fdf]
+Launch example: ./fdf ./test_maps/42.fdf
 
 You can find test maps in test_maps dir. Also, you can drow your own.
 
