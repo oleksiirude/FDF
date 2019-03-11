@@ -7,7 +7,7 @@ My FDF can rotate this figure in any angle.
 
 You can see all functional by pressing 'M' when open fdf.exe.
 
-You can find test maps in test_maps dir. Also, you can drow yout own.
+You can find test maps in test_maps dir. Also, you can drow your own.
 
 If you your system do not have mlx lib, you can inlude it (use stuff into mlx dir).
 
