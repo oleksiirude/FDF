@@ -1,7 +1,13 @@
 # FDF
 This project at UNIT Factory (School 42) project is about creating a simplified 3D graphic representation of a relief landscape.
 
-Basically, my goal was to code program that takes data from a file and based on this data draws figure. My FDF can rotate this figure in any angle. You can see all functional by pressing 'M' when open fdf.exe.
+Basically, my goal was to code program that takes data from a file and based on this data draws figure. 
+
+My FDF can rotate this figure in any angle. 
+
+You can see all functional by pressing 'M' when open fdf.exe.
+
+You can find test maps in test_maps dir. Also, you can drow yout own.
 
 If you your system do not have mlx lib, you can inlude it (use stuff into mlx dir).
 
