@@ -1,6 +1,8 @@
 # FDF
 This project at UNIT Factory (School 42) project is about creating a simplified 3D graphic representation of a relief landscape.
 
+![alt text](https://github.com/oleksiirude/FDF/blob/master/img/fdf.png)
+
 Basically, my goal was to code program that takes data from a file and based on this data draws figure. 
 
 My FDF can rotate this figure in any angle. 
