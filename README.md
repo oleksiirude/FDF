@@ -1,5 +1,5 @@
 # FDF
-This project at UNIT Factory (School 42) project is about creating a simplified 3D graphic representation of a relief landscape.
+This project at UNIT Factory (School 42) is about creating a simplified 3D graphic representation of a relief landscape.
 
 Basically, my goal was to code program that takes data from a file and based on this data draws figure. 
 
