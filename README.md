@@ -17,7 +17,7 @@ You can find test maps in test_maps dir. Also, you can drow your own.
 
 Launch example: ./fdf ./test_maps/42.fdf
 
-If you your system do not have mlx lib, you can inlude it (use stuff into mlx dir).
+If you your system do not have mlx lib, you can include it (use stuff into mlx dir).
 
 Project is done in accordance with school norms (you can see them in Norme pdf).
 
