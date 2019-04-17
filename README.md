@@ -1,4 +1,4 @@
-# FDF
+# FDF [125/125]
 This project at UNIT Factory (School 42) is about creating a simplified 3D graphic representation of a relief landscape.
 
 Basically, my goal was to code program that takes data from a file and based on this data draws figure. 
